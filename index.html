@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Career Path – கல்வி வழிகாட்டி</title>
+<meta name="description" content="Free Tamil + English career guidance: courses, colleges, fees, scholarships, exams and videos for village students.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--pri:#312E81;--acc:#6366F1;--bg:#F8FAFC;--pale:#EEF2FF;--card:#fff;--ok:#10B981;--warn:#F59E0B;--err:#EF4444;--txt:#0F172A;--mut:#64748B;--line:#E2E8F0;--r:22px;--sh:0 8px 28px rgba(49,46,129,.10)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:Poppins,"Noto Sans Tamil",system-ui,sans-serif;background:var(--bg);color:var(--txt);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body[data-lang=ta] .en{display:none}body[data-lang=en] .ta{display:none}
+.ta+.en::before{content:" / "}body[data-lang=en] .ta+.en::before{content:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 18px}
+section{padding:56px 0}
+h1,h2,h3{color:var(--pri);line-height:1.25}
+h2{font-size:clamp(24px,4vw,36px);font-weight:800;margin-bottom:8px}
+.sub{color:var(--mut);margin-bottom:28px;font-size:17px}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:14px;font-weight:700;transition:.2s;text-align:center}
+.btn:active{transform:scale(.97)}
+.b-pri{background:linear-gradient(135deg,var(--pri),var(--acc));color:#fff;box-shadow:0 6px 18px rgba(99,102,241,.35)}
+.b-pri:hover{box-shadow:0 10px 24px rgba(99,102,241,.5);transform:translateY(-2px)}
+.b-ok{background:linear-gradient(135deg,#059669,var(--ok));color:#fff;font-size:18px;min-height:56px;box-shadow:0 6px 18px rgba(16,185,129,.35)}
+.b-ok:hover{transform:translateY(-2px)}
+.b-out{border:2px solid var(--acc);color:var(--pri);background:#fff}
+.b-out:hover{background:var(--pale)}
+.tag{display:inline-block;font-size:13px;font-weight:600;padding:3px 10px;border-radius:99px;background:#D1FAE5;color:#047857}
+.tag.w{background:#FEF3C7;color:#92400E}.tag.b{background:var(--pale);color:var(--pri)}
+/* nav */
+header{position:sticky;top:0;z-index:50;background:var(--pri);color:#fff;box-shadow:0 2px 14px rgba(0,0,0,.18)}
+.nav{display:flex;align-items:center;gap:16px;min-height:68px}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:20px;line-height:1.1}
+.logo small{display:block;font-size:12px;font-weight:400;opacity:.8}
+nav.links{display:flex;gap:2px;margin-left:auto}
+nav.links a{color:#E0E7FF;text-decoration:none;padding:12px 11px;border-radius:10px;font-weight:600;font-size:15px;white-space:nowrap}
+nav.links a:hover{background:rgba(255,255,255,.14);color:#fff}
+.nav .b-pri{background:linear-gradient(135deg,var(--acc),#8B5CF6);padding:0 18px}
+.burger{display:none;width:48px;height:48px;border-radius:12px;color:#fff;font-size:26px;margin-left:auto}
+.burger:hover{background:rgba(255,255,255,.14)}
+@media(max-width:1020px){
+ nav.links{display:none;position:absolute;top:68px;left:0;right:0;background:var(--pri);flex-direction:column;padding:10px 18px 18px;margin:0}
+ nav.links.open{display:flex}nav.links a{padding:15px 12px;font-size:18px;min-height:52px}
+ .burger{display:block}.nav .b-pri{margin-left:0;padding:0 12px;font-size:14px}
+}
+/* hero */
+.hero{background:radial-gradient(900px 400px at 85% 0,#C7D2FE 0,transparent 60%),linear-gradient(180deg,var(--pale),var(--bg));padding:44px 0 36px;overflow:hidden}
+.hero-g{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.hero h1{font-size:clamp(34px,6vw,62px);font-weight:800;letter-spacing:-.5px}
+.hero p.lead{font-size:clamp(17px,2.2vw,21px);color:var(--mut);margin:14px 0 22px;max-width:560px}
+.search{display:flex;gap:8px;background:#fff;border:2px solid var(--line);border-radius:18px;padding:6px;box-shadow:var(--sh);transition:.2s}
+.search:focus-within{border-color:var(--acc);box-shadow:0 0 0 4px rgba(99,102,241,.18)}
+.search input{flex:1;border:0;outline:0;padding:0 12px;min-height:52px;font-size:17px;min-width:0;background:none}
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.cat{min-height:72px;border-radius:18px;color:#fff;font-weight:700;padding:10px;font-size:16px;line-height:1.3;transition:.2s;box-shadow:var(--sh)}
+.cat:hover{transform:translateY(-4px)}.cat:active{transform:scale(.97)}
+.cat span{display:block;font-size:26px}
+.c1{background:linear-gradient(135deg,#6366F1,#818CF8)}.c2{background:linear-gradient(135deg,#059669,#34D399)}.c3{background:linear-gradient(135deg,#D97706,#FBBF24)}
+.trust{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14px;color:var(--mut);font-weight:600}
+.trust b{color:var(--ok)}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 18px 30px rgba(49,46,129,.18))}
+@media(max-width:860px){.hero-g{grid-template-columns:1fr}.hero-art{order:-1;max-width:420px;margin:0 auto}}
+/* career cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:20px}
+.card{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);padding:22px;border:1px solid #E0E7FF;transition:.25s;display:flex;flex-direction:column;gap:12px}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(49,46,129,.18);border-color:var(--acc)}
+.ico{width:64px;height:64px;border-radius:20px;display:grid;place-items:center;font-size:34px;background:var(--pale)}
+.card h3{font-size:20px}
+.journey{display:flex;flex-wrap:wrap;gap:4px;font-size:12.5px;color:var(--mut);font-weight:600}
+.journey i{font-style:normal;background:var(--pale);color:var(--pri);padding:2px 8px;border-radius:99px}
+.journey i+i::before{content:"→ ";color:var(--acc)}
+.journey{gap:5px}
+.card .btn{margin-top:auto}
+/* colleges */
+.filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;background:#fff;padding:18px;border-radius:var(--r);box-shadow:var(--sh);margin-bottom:22px}
+.filters label{font-size:14px;font-weight:600;color:var(--mut);display:flex;flex-direction:column;gap:4px}
+.filters select{min-height:48px;border:2px solid var(--line);border-radius:12px;padding:0 10px;background:#fff}
+.filters select:focus{border-color:var(--acc);outline:0}
+.chk{flex-direction:row!important;align-items:center;gap:10px!important;min-height:48px;cursor:pointer}
+.chk input{width:22px;height:22px;accent-color:var(--acc)}
+.col{gap:10px}
+.col .meta{color:var(--mut);font-size:15px}
+.fee{font-size:26px;font-weight:800;color:var(--pri)}.fee small{font-size:14px;color:var(--mut);font-weight:400}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto}
+.btns .btn{padding:0 8px;font-size:15px}
+.empty{grid-column:1/-1;text-align:center;padding:40px;color:var(--mut)}
+/* quiz */
+.quiz{background:linear-gradient(135deg,var(--pri),#4F46E5);color:#fff;border-radius:28px;padding:clamp(24px,5vw,52px);display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.quiz h2{color:#fff}.quiz p{color:#E0E7FF;font-size:18px;margin-bottom:16px}
+.qcard{background:#fff;color:var(--txt);border-radius:var(--r);padding:22px;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.prog{height:12px;background:var(--line);border-radius:99px;overflow:hidden;margin:8px 0 14px}
+.prog div{height:100%;width:0;background:linear-gradient(90deg,var(--ok),#34D399);border-radius:99px;transition:width .4s}
+.qtxt{font-size:21px;font-weight:700;color:var(--pri);margin:8px 0 16px;min-height:64px}
+.ans{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.ans button{min-height:54px;border-radius:14px;font-weight:700;border:2px solid var(--line);background:#fff;transition:.15s;font-size:15px}
+.ans button:hover{border-color:var(--acc);background:var(--pale)}
+.ans button:active{transform:scale(.95)}
+.ans .y:hover{border-color:var(--ok);background:#D1FAE5}.ans .n:hover{border-color:var(--err);background:#FEE2E2}
+@media(max-width:860px){.quiz{grid-template-columns:1fr}}
+/* videos */
+.vids{display:flex;gap:18px;overflow-x:auto;padding:4px 2px 18px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.vid{flex:0 0 280px;scroll-snap-align:start;background:#fff;border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;text-align:left;transition:.2s;border:1px solid #E0E7FF}
+.vid:hover{transform:translateY(-5px)}
+.thumb{height:158px;position:relative;display:grid;place-items:center;font-size:54px}
+.play{position:absolute;width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.95);display:grid;place-items:center;color:var(--pri);font-size:22px;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:.2s}
+.vid:hover .play{transform:scale(1.15)}
+.dur{position:absolute;right:10px;bottom:10px;background:rgba(15,23,42,.85);color:#fff;font-size:13px;font-weight:600;padding:2px 8px;border-radius:8px}
+.vid .tag{position:absolute;left:10px;top:10px}
+.vid h3{padding:14px 16px 16px;font-size:17px;color:var(--txt)}
+/* stories, schol */
+.story .av{width:72px;height:72px;border-radius:50%;display:grid;place-items:center;font-size:36px;background:linear-gradient(135deg,#C7D2FE,#A7F3D0)}
+.story q{color:var(--txt);font-style:italic}
+.schol dl{display:grid;gap:6px;font-size:15px}.schol dt{color:var(--mut);font-size:13px;font-weight:600}
+.amt{font-size:24px;font-weight:800;color:#B45309}
+/* mentor */
+.mentor{background:var(--pale);border-radius:28px;padding:clamp(22px,4vw,44px);display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.mentor form{display:grid;gap:12px}
+@media(max-width:860px){.mentor{grid-template-columns:1fr}}
+.inp{width:100%;min-height:50px;border:2px solid var(--line);border-radius:14px;padding:10px 14px;background:#fff}
+.inp:focus{border-color:var(--acc);outline:0;box-shadow:0 0 0 4px rgba(99,102,241,.15)}
+.wa{background:#25D366;color:#fff}
+.fab{position:fixed;right:16px;bottom:16px;z-index:40;width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;font-size:30px;display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.3);text-decoration:none;transition:.2s}
+.fab:hover{transform:scale(1.1)}
+/* footer */
+footer{background:var(--pri);color:#C7D2FE;padding:44px 0 24px}
+footer h4{color:#fff;margin-bottom:10px}footer a{color:#C7D2FE;display:block;padding:6px 0;text-decoration:none}footer a:hover{color:#fff;text-decoration:underline}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:26px}
+.lang{display:inline-flex;background:rgba(255,255,255,.12);border-radius:12px;padding:4px;gap:4px}
+.lang button{color:#fff;min-height:44px;padding:0 14px;border-radius:9px;font-weight:600}
+.lang button.on{background:var(--acc)}
+.copy{border-top:1px solid rgba(255,255,255,.18);margin-top:26px;padding-top:16px;font-size:14px}
+/* modal */
+.ov{position:fixed;inset:0;background:rgba(15,23,42,.6);backdrop-filter:blur(4px);z-index:100;display:none;align-items:center;justify-content:center;padding:14px;overflow-y:auto}
+.ov.show{display:flex}
+.modal{background:#fff;border-radius:26px;width:100%;max-width:460px;padding:26px;position:relative;box-shadow:0 30px 80px rgba(0,0,0,.4);animation:pop .25s;margin:auto}
+.modal.big{max-width:640px}
+@keyframes pop{from{opacity:0;transform:translateY(20px) scale(.97)}}
+.x{position:absolute;right:12px;top:12px;width:48px;height:48px;border-radius:50%;font-size:24px;color:var(--mut)}.x:hover{background:var(--pale)}
+.modal h2{font-size:25px;padding-right:44px}
+.tabs{display:grid;grid-template-columns:1fr 1fr;background:var(--pale);border-radius:14px;padding:4px;margin:16px 0}
+.tabs button{min-height:48px;border-radius:11px;font-weight:700;color:var(--mut)}
+.tabs button.on{background:#fff;color:var(--acc);box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.form{display:grid;gap:12px}.form label{font-size:14px;font-weight:600;color:var(--mut);display:grid;gap:4px}
+.err{color:var(--err);font-size:14px;font-weight:600;min-height:20px}
+.gbtn{background:#fff;border:2px solid var(--line);width:100%;min-height:52px;border-radius:14px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:10px}
+.gbtn:hover{background:var(--bg);border-color:#CBD5E1}
+.or{text-align:center;color:var(--mut);font-size:14px;margin:12px 0}
+.priv{font-size:13px;color:var(--mut);text-align:center;margin-top:12px}
+.spin{width:20px;height:20px;border:3px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:sp .7s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);gap:12px}.row span:first-child{color:var(--mut)}.row b{text-align:right}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--txt);color:#fff;padding:14px 22px;border-radius:14px;z-index:200;font-weight:600;display:none;max-width:90vw}
+.toast.show{display:block;animation:pop .25s}
+.user{display:none;align-items:center;gap:8px;color:#fff;font-weight:600}
+.res{display:grid;gap:12px;margin:16px 0}
+.res div{display:flex;gap:14px;align-items:center;background:var(--pale);border-radius:16px;padding:14px}
+.res .m{font-size:34px}.res b{display:block}
+.res .bar{height:8px;background:#fff;border-radius:9px;overflow:hidden;margin-top:6px}.res .bar i{display:block;height:100%;background:var(--ok)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body data-lang="both">
+
+<header>
+ <div class="wrap nav">
+  <a href="#home" class="logo" aria-label="Career Path">
+   <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#6366F1"/><path d="M6 15l14-6 14 6-14 6z" fill="#fff"/><path d="M12 20v6c0 2 4 4 8 4s8-2 8-4v-6l-8 3.5z" fill="#C7D2FE"/><path d="M34 15v9" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/></svg>
+   <span>Career Path<small>கல்வி வழிகாட்டி</small></span>
+  </a>
+  <nav class="links" id="links" aria-label="Main">
+   <a href="#home">முகப்பு <span class="en">Home</span></a>
+   <a href="#careers">பாடநெறி <span class="en">Courses</span></a>
+   <a href="#colleges">கல்லூரி <span class="en">Colleges</span></a>
+   <a href="#quiz">வினாடி வினா <span class="en">Quiz</span></a>
+   <a href="#videos">வீடியோ <span class="en">Videos</span></a>
+   <a href="#schol">உதவித்தொகை <span class="en">Scholarships</span></a>
+   <a href="#help">உதவி <span class="en">Help</span></a>
+  </nav>
+  <span class="user" id="userBox">👤 <span id="userName"></span> <button class="btn b-out" style="min-height:40px;padding:0 12px" onclick="logout()">Logout</button></span>
+  <button class="btn b-pri" id="loginBtn" onclick="openAuth()">Sign Up / Login</button>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+ </div>
+</header>
+
+<main id="home">
+<div class="hero"><div class="wrap hero-g">
+ <div>
+  <h1>உன் கனவை உண்மையாக்கு</h1>
+  <p class="lead">Find the right course, college, fees, exam, and career path for your future.</p>
+  <form class="search" onsubmit="return doSearch(event)" role="search">
+   <input id="q" type="search" placeholder="What do you want to become? Doctor, Engineer, Teacher, Police, Nurse, Business…" aria-label="Search careers">
+   <button class="btn b-pri" type="submit">🔍 <span class="ta">தேடு</span><span class="en">Search</span></button>
+  </form>
+  <div class="cats">
+   <button class="cat c1" onclick="setStage('10')"><span>🎒</span>10-க்குப் பிறகு<br><small>After 10th</small></button>
+   <button class="cat c2" onclick="setStage('12')"><span>📘</span>12-க்குப் பிறகு<br><small>After 12th</small></button>
+   <button class="cat c3" onclick="setStage('deg')"><span>🎓</span>பட்டத்திற்குப் பிறகு<br><small>After Degree</small></button>
+  </div>
+  <div class="trust"><span><b>✔</b> 100% Free Guidance</span><span><b>✔</b> Tamil + English</span><span><b>✔</b> College Fees</span><span><b>✔</b> Career Videos</span><span><b>✔</b> Exam Information</span></div>
+ </div>
+ <div class="hero-art" aria-hidden="true">
+  <svg viewBox="0 0 480 440">
+   <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C7D2FE"/><stop offset="1" stop-color="#A7F3D0"/></linearGradient><linearGradient id="g2" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FDE68A"/><stop offset="1" stop-color="#FFF"/></linearGradient></defs>
+   <circle cx="240" cy="220" r="200" fill="url(#g1)" opacity=".7"/>
+   <circle cx="240" cy="220" r="150" fill="url(#g2)" opacity=".8"/>
+   <path d="M20 400c80-60 160-70 220-50s160 40 220-30v80H20z" fill="#10B981" opacity=".85"/>
+   <path d="M60 400c90-30 190-20 260 0s100 0 130-20" stroke="#fff" stroke-width="6" stroke-dasharray="3 14" stroke-linecap="round" fill="none"/>
+   <!-- students -->
+   <g><circle cx="200" cy="230" r="26" fill="#8D5524"/><path d="M174 224c4-26 48-26 52 0-10-8-42-8-52 0z" fill="#1F2937"/><rect x="176" y="256" width="48" height="84" rx="20" fill="#6366F1"/><rect x="186" y="336" width="12" height="50" rx="5" fill="#1F2937"/><rect x="204" y="336" width="12" height="50" rx="5" fill="#1F2937"/><path d="M224 276l30-30" stroke="#8D5524" stroke-width="12" stroke-linecap="round"/></g>
+   <g><circle cx="290" cy="244" r="23" fill="#A9693A"/><path d="M267 236c6-24 40-24 46 0-8-6-38-6-46 0z" fill="#111827"/><path d="M268 240c-8 20-6 50 2 70" stroke="#111827" stroke-width="9" stroke-linecap="round" fill="none"/><rect x="268" y="268" width="44" height="72" rx="18" fill="#F59E0B"/><rect x="276" y="336" width="11" height="48" rx="5" fill="#334155"/><rect x="293" y="336" width="11" height="48" rx="5" fill="#334155"/><path d="M268 286l-22 -34" stroke="#A9693A" stroke-width="11" stroke-linecap="round"/></g>
+   <path d="M232 218l28-12 28 12-28 12z" fill="#312E81" transform="translate(-60 -6) scale(.9)"/>
+   <!-- floating career icons -->
+   <g font-size="40" text-anchor="middle"><text x="70" y="110">📚</text><text x="400" y="100">🎓</text><text x="90" y="250">💻</text><text x="410" y="240">🩺</text><text x="150" y="60">⚙️</text><text x="330" y="52">🏛️</text><text x="420" y="350">🌱</text></g>
+   <text x="240" y="38" text-anchor="middle" font-size="34">☀️</text>
+  </svg>
+ </div>
+</div></div>
+
+<section id="careers"><div class="wrap">
+ <h2>உன் வழியைத் தேர்ந்தெடு <span class="en" style="font-size:.6em;color:var(--mut);display:block">Choose Your Career Path</span></h2>
+ <p class="sub" id="stageNote">Tap any card to see courses, colleges, fees, exams and videos.</p>
+ <div class="grid" id="careerGrid"></div>
+</div></section>
+
+<section id="colleges" style="background:#fff"><div class="wrap">
+ <h2>கல்லூரி மற்றும் கட்டணம் <span class="en" style="font-size:.6em;color:var(--mut);display:block">Find Colleges &amp; Fees</span></h2>
+ <p class="sub">Compare fees, hostel and scholarships in one place.</p>
+ <div class="filters">
+  <label>மாவட்டம் / District<select id="fD"></select></label>
+  <label>பாடநெறி / Course<select id="fC"></select></label>
+  <label>கட்டணம் / Fee Range<select id="fF"><option value="">Any fee</option><option value="25000">Below ₹25,000</option><option value="75000">Below ₹75,000</option><option value="150000">Below ₹1,50,000</option><option value="999999">Above ₹1,50,000</option></select></label>
+  <label>வகை / Type<select id="fT"><option value="">All</option><option>Government</option><option>Private</option><option>Aided</option></select></label>
+  <label class="chk"><input type="checkbox" id="fH"> விடுதி / Hostel</label>
+  <label class="chk"><input type="checkbox" id="fS"> உதவித்தொகை / Scholarship</label>
+ </div>
+ <div class="grid" id="colGrid"></div>
+</div></section>
+
+<section id="quiz"><div class="wrap">
+ <div class="quiz">
+  <div>
+   <h2>உனக்கு பொருத்தமான தொழில் <span class="en" style="font-size:.6em;display:block;opacity:.85">Career Match Quiz</span></h2>
+   <p>Answer 100 simple questions and discover the top 3 careers that match your interests, skills, and goals.</p>
+   <p>⏱ 10–15 minutes · 100% Free</p>
+   <button class="btn b-ok" onclick="gate({t:'quiz'})">▶ Start Free Quiz</button>
+  </div>
+  <div class="qcard" aria-live="polite">
+   <div style="display:flex;justify-content:space-between;font-weight:600;color:var(--mut);font-size:14px"><span id="dq">Question 1 of 100</span><span>Sample</span></div>
+   <div class="prog"><div id="dp" style="width:1%"></div></div>
+   <div class="qtxt" id="dt"></div>
+   <div class="ans"><button class="y" onclick="demo()">👍 ஆம்<br><small>Yes</small></button><button onclick="demo()">🤔 ஒருவேளை<br><small>Maybe</small></button><button class="n" onclick="demo()">👎 இல்லை<br><small>No</small></button></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="videos" style="padding-top:0"><div class="wrap">
+ <h2>கற்றுக்கொள்ள வீடியோக்கள் <span class="en" style="font-size:.6em;color:var(--mut);display:block">Learn From Videos</span></h2>
+ <p class="sub">Swipe to see more →</p>
+ <div class="vids" id="vidRow"></div>
+</div></section>
+
+<section style="background:#fff"><div class="wrap">
+ <h2>வெற்றிக் கதைகள் <span class="en" style="font-size:.6em;color:var(--mut);display:block">Success Stories</span></h2>
+ <p class="sub">Students from villages like yours.</p>
+ <div class="grid" id="storyGrid"></div>
+</div></section>
+
+<section id="schol"><div class="wrap">
+ <h2>உதவித்தொகை &amp; அரசு திட்டங்கள் <span class="en" style="font-size:.6em;color:var(--mut);display:block">Scholarships &amp; Government Schemes</span></h2>
+ <p class="sub">Don't miss the deadline. Apply early.</p>
+ <div class="grid" id="scholGrid"></div>
+</div></section>
+
+<section id="help" style="padding-top:0"><div class="wrap">
+ <div class="mentor">
+  <div>
+   <h2>வழிகாட்டியிடம் கேள் <span class="en" style="font-size:.6em;color:var(--mut);display:block">Ask a Mentor</span></h2>
+   <p class="sub" style="margin-bottom:16px">Confused? A free mentor will call you back in Tamil or English.</p>
+   <a class="btn wa" href="https://wa.me/910000000000?text=Hi%20Career%20Path%2C%20I%20need%20guidance" target="_blank" rel="noopener">💬 WhatsApp Mentor</a>
+  </div>
+  <form id="mForm" onsubmit="return mentor(event)">
+   <input class="inp" name="n" placeholder="உன் பெயர் / Your name" required>
+   <input class="inp" name="m" type="tel" inputmode="numeric" pattern="[0-9]{10}" placeholder="Mobile number (10 digits)" required>
+   <textarea class="inp" name="q" rows="3" placeholder="உன் கேள்வி / Your question"></textarea>
+   <button class="btn b-pri" type="submit">📞 Request Call Back</button>
+  </form>
+ </div>
+</div></section>
+</main>
+
+<a class="fab" href="https://wa.me/910000000000" target="_blank" rel="noopener" aria-label="WhatsApp help">💬</a>
+
+<footer><div class="wrap">
+ <div class="fg">
+  <div><h4>Career Path · கல்வி வழிகாட்டி</h4><p>Free career guidance for every village student.</p><p style="margin-top:10px">📞 +91 00000 00000</p></div>
+  <div><h4>Quick Links</h4><a href="#careers">Courses</a><a href="#colleges">Colleges</a><a href="#quiz">Career Quiz</a><a href="#schol">Scholarships</a></div>
+  <div><h4>மொழி / Language</h4><div class="lang" id="lang"><button data-l="both" class="on">தமிழ்+EN</button><button data-l="ta">தமிழ்</button><button data-l="en">English</button></div></div>
+  <div><h4>Follow</h4><a href="#">▶ YouTube</a><a href="#">📷 Instagram</a><a href="#">📘 Facebook</a></div>
+ </div>
+ <div class="copy">© 2026 Career Path · <a style="display:inline" href="#">Privacy Policy</a> · <a style="display:inline" href="#">Terms</a></div>
+</div></footer>
+
+<!-- Auth modal -->
+<div class="ov" id="authOv" role="dialog" aria-modal="true" aria-labelledby="authT">
+ <div class="modal">
+  <button class="x" onclick="closeAuth()" aria-label="Close">✕</button>
+  <h2 id="authT">உன் எதிர்காலத்திற்கு சேர் <span class="en" style="display:block;font-size:.65em;color:var(--mut)">Join Your Future</span></h2>
+  <div class="tabs"><button class="on" id="tS" onclick="tab('s')">Sign Up</button><button id="tL" onclick="tab('l')">Login</button></div>
+  <form class="form" id="fS2" onsubmit="return submitAuth(event,'s')" novalidate>
+   <label>பெயர் / Name<input class="inp" name="name" autocomplete="name"></label>
+   <label>மொபைல் / Mobile Number<input class="inp" name="mob" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel"></label>
+   <label>ஊர், மாவட்டம் / Village, District<input class="inp" name="vil"></label>
+   <label>வகுப்பு / Class or Qualification<select class="inp" name="cls"><option value="">Select…</option><option>10th</option><option>12th</option><option>Diploma</option><option>Degree</option><option>Other</option></select></label>
+   <label>கடவுச்சொல் / Password<input class="inp" name="pw" type="password" autocomplete="new-password"></label>
+   <div class="err" id="eS" role="alert"></div>
+   <button class="btn b-ok" style="min-height:54px" type="submit">Create Free Account</button>
+  </form>
+  <form class="form" id="fL" style="display:none" onsubmit="return submitAuth(event,'l')" novalidate>
+   <label>மொபைல் / Mobile or Email<input class="inp" name="id" autocomplete="username"></label>
+   <label>கடவுச்சொல் / Password<input class="inp" name="pw" type="password" autocomplete="current-password"></label>
+   <div class="err" id="eL" role="alert"></div>
+   <button class="btn b-pri" style="min-height:54px" type="submit">Login</button>
+   <a href="#" style="text-align:center;color:var(--acc);font-weight:600;padding:8px" onclick="forgot(event)">Forgot Password?</a>
+  </form>
+  <div class="or">— or —</div>
+  <button class="gbtn" onclick="googleLogin()"><svg width="22" height="22" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9 3.6l6.7-6.7C35.7 2.4 30.2 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.8 6.1C12.3 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17.5z"/><path fill="#FBBC05" d="M10.4 28.7A14.5 14.5 0 0 1 9.5 24c0-1.6.3-3.2.9-4.7l-7.8-6.1A24 24 0 0 0 0 24c0 3.9.9 7.5 2.6 10.8l7.8-6.1z"/><path fill="#34A853" d="M24 48c6.2 0 11.4-2 15.2-5.5l-7.5-5.8c-2 1.4-4.7 2.300-7.7 2.300-6.3 0-11.700-4.100-13.600-9.800l-7.800 6.100C6.500 42.600 14.600 48 24 48z"/></svg>Continue with Google</button>
+  <p class="priv">🔒 Your information is safe. We use it only to give you better career guidance.</p>
+ </div>
+</div>
+
+<!-- Detail modal -->
+<div class="ov" id="detOv" role="dialog" aria-modal="true"><div class="modal big"><button class="x" onclick="closeDet()" aria-label="Close">✕</button><div id="detBody"></div></div></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+"use strict";
+const $=s=>document.querySelector(s);
+const B=(ta,en)=>`<span class="ta">${ta}</span><span class="en">${en}</span>`;
+const store={get(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+
+/* ---------- DATA ---------- */
+const CAREERS=[
+ {id:'eng',ic:'⚙️',ta:'பொறியியல்',en:'Engineering',tag:'Job Opportunities',stage:['12'],courses:['B.E / B.Tech Mechanical','B.E Civil','B.E ECE'],exam:'TNEA (Tamil Nadu), JEE Main',fee:'₹30,000 – ₹2,00,000 / year',desc:'Design and build machines, buildings and electronics. Strong jobs in core companies and IT.',v:'Engineering Admission Guide'},
+ {id:'med',ic:'🩺',ta:'மருத்துவம் & செவிலியம்',en:'Medicine & Nursing',tag:'Free Guidance',stage:['12'],courses:['MBBS','B.Sc Nursing','B.Pharm'],exam:'NEET UG',fee:'₹15,000 – ₹12,00,000 / year',desc:'Serve people as a doctor, nurse or pharmacist. Nursing has excellent job demand in India and abroad.',v:'How to become a Nurse'},
+ {id:'gov',ic:'🏛️',ta:'அரசு வேலைகள்',en:'Government Jobs',tag:'Job Opportunities',stage:['10','12','deg'],courses:['TNPSC Group 4 / 2','Police (SI/Constable)','SSC / Railways'],exam:'TNPSC, TNUSRB, SSC, RRB',fee:'Free to low-cost coaching',desc:'Stable, respected jobs in the state and central government. Start preparing early.',v:'Government Exam Preparation'},
+ {id:'tea',ic:'📚',ta:'ஆசிரியர் பணி',en:'Teaching',tag:'Free Guidance',stage:['12','deg'],courses:['D.El.Ed','B.Ed','B.A / B.Sc + TET'],exam:'TNTET, CTET',fee:'₹10,000 – ₹60,000 / year',desc:'Shape the next generation. Government school teacher jobs through TET exams.',v:'Best Courses After 12th'},
+ {id:'art',ic:'🎨',ta:'கலை & வடிவமைப்பு',en:'Arts & Design',tag:'Free Guidance',stage:['12','deg'],courses:['B.A Tamil / English','B.Des','Fine Arts'],exam:'NID DAT, UCEED, college entrance',fee:'₹8,000 – ₹1,50,000 / year',desc:'Creative careers in design, media, animation, literature and fine arts.',v:'Best Courses After 12th'},
+ {id:'com',ic:'💼',ta:'வணிகம்',en:'Commerce & Business',tag:'Job Opportunities',stage:['12','deg'],courses:['B.Com','BBA','CA / CMA'],exam:'CUET, CA Foundation',fee:'₹10,000 – ₹80,000 / year',desc:'Accounts, banking, finance and starting your own business.',v:'How to Choose the Right College'},
+ {id:'agr',ic:'🌱',ta:'வேளாண்மை',en:'Agriculture',tag:'Free Guidance',stage:['12','deg'],courses:['B.Sc Agriculture','B.Sc Horticulture','Diploma in Agri'],exam:'TNAU Counselling, ICAR AIEEA',fee:'₹15,000 – ₹70,000 / year',desc:'Modern farming, agri-business and government agriculture officer jobs.',v:'Best Courses After 12th'},
+ {id:'it',ic:'💻',ta:'கணினி & ஐடி',en:'IT & Computer Jobs',tag:'Job Opportunities',stage:['12','deg'],courses:['B.Sc Computer Science','BCA','B.Tech IT'],exam:'CUET, TNEA, college entrance',fee:'₹20,000 – ₹1,50,000 / year',desc:'Software, web and data jobs. You can even learn online for free.',v:'Engineering Admission Guide'},
+ {id:'skl',ic:'🛠️',ta:'திறன் பயிற்சி & டிப்ளமா',en:'Skill Training & Diploma',tag:'Job Opportunities',stage:['10'],courses:['Polytechnic Diploma','ITI (Electrician, Fitter)','Paramedical Diploma'],exam:'Direct admission / 10th marks',fee:'₹2,000 – ₹30,000 / year',desc:'Quick way to a job after 10th. Many diploma courses allow lateral entry into degree.',v:'Best Courses After 12th'},
+ {id:'law',ic:'⚖️',ta:'சட்டம்',en:'Law',tag:'Free Guidance',stage:['12','deg'],courses:['B.A LL.B (5 years)','LL.B (3 years)'],exam:'CLAT, TNDALU Entrance',fee:'₹20,000 – ₹2,00,000 / year',desc:'Become a lawyer, judge or legal advisor.',v:'How to Choose the Right College'}
+];
+const COLLEGES=[
+ {id:1,n:'Madras Medical College',d:'Chennai',c:'MBBS',f:15000,t:'Government',h:1,s:1,r:'4.8',p:'Top govt medical college'},
+ {id:2,n:'Govt. College of Nursing',d:'Madurai',c:'B.Sc Nursing',f:8000,t:'Government',h:1,s:1,r:'4.5',p:'90% placement'},
+ {id:3,n:'College of Engineering, Guindy',d:'Chennai',c:'B.E Mechanical',f:45000,t:'Government',h:1,s:1,r:'4.7',p:'Top recruiters visit'},
+ {id:4,n:'Government Polytechnic College',d:'Salem',c:'Diploma Mechanical',f:3000,t:'Government',h:1,s:1,r:'4.2',p:'Job in 3 years'},
+ {id:5,n:'TNAU Agricultural College',d:'Coimbatore',c:'B.Sc Agriculture',f:25000,t:'Government',h:1,s:1,r:'4.6',p:'Govt officer jobs'},
+ {id:6,n:'PSG College of Arts & Science',d:'Coimbatore',c:'B.Sc Computer Science',f:60000,t:'Aided',h:1,s:0,r:'4.4',p:'IT placements'},
+ {id:7,n:'Govt. Arts College',d:'Tiruchirappalli',c:'B.Com',f:4000,t:'Government',h:0,s:1,r:'4.1',p:'Bank exam coaching'},
+ {id:8,n:'Sri Ramakrishna Engineering College',d:'Coimbatore',c:'B.E ECE',f:110000,t:'Private',h:1,s:1,r:'4.3',p:'85% placement'},
+ {id:9,n:'Govt. Law College',d:'Madurai',c:'LL.B',f:12000,t:'Government',h:0,s:1,r:'4.2',p:'Good bar placement'},
+ {id:10,n:'Annamalai University',d:'Cuddalore',c:'B.Ed',f:35000,t:'Government',h:1,s:1,r:'4.3',p:'TET coaching'},
+ {id:11,n:'Loyola College',d:'Chennai',c:'BBA',f:70000,t:'Aided',h:1,s:0,r:'4.6',p:'Top campus jobs'},
+ {id:12,n:'Thiagarajar College',d:'Madurai',c:'BCA',f:28000,t:'Aided',h:1,s:1,r:'4.4',p:'Software jobs'}
+];
+const VIDEOS=[
+ ['How to become a Nurse','12:30','Medicine','#FCA5A5,#FDE68A','🩺'],
+ ['Government Exam Preparation','18:05','Govt Jobs','#A5B4FC,#C7D2FE','🏛️'],
+ ['Best Courses After 12th','09:45','Guidance','#6EE7B7,#A7F3D0','📘'],
+ ['Engineering Admission Guide','14:20','Engineering','#FDBA74,#FDE68A','⚙️'],
+ ['Scholarships for Village Students','08:10','Scholarship','#FCD34D,#FEF3C7','🎓'],
+ ['How to Choose the Right College','11:00','Guidance','#93C5FD,#C7D2FE','🏫']
+];
+const STORIES=[
+ ['👨‍🎓','Karthik','Kuruvikulam, Tenkasi','B.E Mechanical – Govt. College','Got ₹6 LPA job at a core company. First graduate in family.'],
+ ['👩‍⚕️','Meena','Thiruvennainallur, Villupuram','B.Sc Nursing','Now works as a staff nurse in Chennai and supports her family.'],
+ ['👩‍🏫','Priya','Melur, Madurai','B.Ed + TNTET','Cleared TET and became a government school teacher.'],
+ ['👮','Selvam','Pennadam, Cuddalore','Police Sub-Inspector','Prepared with free videos and cleared TNUSRB in first attempt.']
+];
+const SCHOL=[
+ ['First Graduate Scholarship','TN Govt','First graduate in family, income < ₹2.5 lakh','Full tuition fee','31 Dec 2026'],
+ ['Pudhumai Penn','TN Govt','Girls from govt schools pursuing degree/diploma','₹1,000 / month','Rolling'],
+ ['Central Sector Scholarship','Govt of India','Top 20 percentile in 12th, income < ₹4.5 lakh','₹12,000 / year','31 Oct 2026'],
+ ['Post-Matric SC/ST/BC Scholarship','TN Govt','SC/ST/BC/MBC students','Fees + maintenance','30 Nov 2026']
+];
+const QPA={ /* 10 statements per interest area, 100 in total */
+ eng:['I like taking machines apart to see how they work','I enjoy fixing bicycles, pumps or motors','I like drawing plans of buildings or machines','I am good at maths problems','I like building things with my hands','Bridges, roads and tall buildings fascinate me','I enjoy science experiments','I like to know how electricity works','I like solving puzzles step by step','I would like to design new vehicles'],
+ med:['Do you enjoy helping sick people?','I stay calm when someone is hurt','I like biology and the human body','I feel happy caring for elders and children','I can handle the sight of blood','I would like to work in a hospital','I want to save lives','I listen carefully to people\'s problems','I am ready to study for many years','I like learning about medicines and health'],
+ gov:['I want a stable job with a good pension','I like to serve the people of my village','I follow current news and politics daily','I would be proud to wear a uniform','I am ready to prepare for competitive exams','I like helping people get government schemes','I am disciplined and follow rules','I want to become an officer one day','I enjoy reading general knowledge','I can stay fit and active for physical tests'],
+ tea:['I enjoy explaining things to others','Children like to be around me','I like helping friends understand lessons','I am patient when someone is slow to learn','I enjoy speaking in front of a group','I respect teachers and want to be like them','I like reading books','I want to improve education in my village','I enjoy making learning fun','I like organising classes or games for kids'],
+ art:['I love drawing or painting','I enjoy singing, dancing or acting','I like writing stories or poems','I notice colours and designs everywhere','I like taking photos or making videos','I enjoy decorating and kolam designs','I want to design clothes or posters','I like creating new ideas','I enjoy Tamil literature and culture','I would like to work in cinema or media'],
+ com:['I like calculating money and profits','I dream of starting my own shop or business','I am good at keeping accounts','I enjoy buying and selling','I like to understand banks and loans','I can bargain well and talk to customers','I like to plan and save money','I enjoy marketing and advertising ideas','I want to become a business owner','I like working with numbers and tables'],
+ agr:['I love working in farms and gardens','I enjoy growing plants and trees','I like taking care of cows, goats or poultry','I want to improve farming in my village','I am interested in soil, water and weather','I like learning new farming machines','I want to help farmers earn more','I enjoy being outdoors in nature','I am curious about organic farming','I would like to sell farm products'],
+ it:['I enjoy using mobile phones and computers','I like playing and learning computer games','I want to build apps or websites','I learn new technology quickly','I like typing and working on a computer','I enjoy solving logical puzzles','I am curious how the internet works','I like editing photos or videos on the phone','I would like to work in a big IT company','I like to learn from YouTube videos'],
+ skl:['I prefer learning by doing, not only reading','I want to start earning early','I enjoy electrical or plumbing work','I like repairing mobiles or TVs','I am good at using tools','I want to learn a skill quickly in 1–2 years','I like driving or working with vehicles','I enjoy tailoring, cooking or beauty work','I would like to run my own workshop','I want a job close to my home'],
+ law:['I like debating and arguing a point','I get upset when someone is treated unfairly','I want to help people get justice','I like reading and understanding rules','I speak clearly and confidently','I enjoy court and police stories','I like to read newspapers','I would like to wear a lawyer\'s black coat','I stay calm in arguments','I remember facts and details well']
+};
+const KEYS=Object.keys(QPA);
+const QUESTIONS=[];for(let i=0;i<10;i++)KEYS.forEach(k=>QUESTIONS.push({k,t:QPA[k][i]}));
+
+/* ---------- RENDER ---------- */
+function careerCard(c){return `<article class="card"><div class="ico">${c.ic}</div><h3>${B(c.ta,c.en)}</h3><span><span class="tag">✔ ${c.tag}</span></span>
+ <div class="journey"><i>Interest</i><i>Course</i><i>College</i><i>Fees</i><i>Videos</i><i>Exam</i></div>
+ <button class="btn b-pri" onclick="gate({t:'career',id:'${c.id}'})">Explore Path ➜</button></article>`}
+function renderCareers(stage){const L=CAREERS.filter(c=>!stage||c.stage.includes(stage));$('#careerGrid').innerHTML=L.map(careerCard).join('')}
+function renderColleges(){
+ const d=$('#fD').value,c=$('#fC').value,f=$('#fF').value,t=$('#fT').value,h=$('#fH').checked,s=$('#fS').checked;
+ const L=COLLEGES.filter(x=>(!d||x.d===d)&&(!c||x.c===c)&&(!t||x.t===t)&&(!h||x.h)&&(!s||x.s)&&(!f||(f==='999999'?x.f>=150000:x.f<=+f)));
+ $('#colGrid').innerHTML=L.length?L.map(x=>`<article class="card col"><div style="display:flex;justify-content:space-between;gap:8px"><span class="tag ${x.t==='Private'?'b':''}">${x.t}</span><b style="color:#B45309">⭐ ${x.r}</b></div>
+ <h3>${x.n}</h3><div class="meta">📍 ${x.d}, Tamil Nadu<br>📘 ${x.c}</div>
+ <div class="fee">₹${x.f.toLocaleString('en-IN')} <small>/ year · கட்டணம்</small></div>
+ <div class="tags"><span class="tag ${x.h?'':'b'}">${x.h?'🛏 Hostel available':'No hostel'}</span>${x.s?'<span class="tag w">🎓 Scholarship</span>':''}<span class="tag b">📈 ${x.p}</span></div>
+ <div class="btns"><button class="btn b-pri" onclick="gate({t:'college',id:${x.id}})">View Details</button><button class="btn b-out" onclick="gate({t:'video',id:0})">▶ Videos</button></div></article>`).join(''):'<div class="empty">😔 No colleges match. Try changing the filters.</div>'}
+function opts(sel,arr,all){sel.innerHTML=`<option value="">${all}</option>`+arr.map(a=>`<option>${a}</option>`).join('')}
+opts($('#fD'),[...new Set(COLLEGES.map(c=>c.d))].sort(),'All districts');
+opts($('#fC'),[...new Set(COLLEGES.map(c=>c.c))].sort(),'All courses');
+document.querySelectorAll('.filters select,.filters input').forEach(e=>e.addEventListener('change',renderColleges));
+$('#vidRow').innerHTML=VIDEOS.map((v,i)=>`<button class="vid" onclick="gate({t:'video',id:${i}})"><div class="thumb" style="background:linear-gradient(135deg,${v[3]})">${v[4]}<span class="tag b">${v[2]}</span><span class="play">▶</span><span class="dur">${v[1]}</span></div><h3>${v[0]}</h3></button>`).join('');
+$('#storyGrid').innerHTML=STORIES.map(s=>`<article class="card story"><div class="av">${s[0]}</div><h3>${s[1]}</h3><div class="meta" style="color:var(--mut);font-size:15px">📍 ${s[2]}<br>🎓 ${s[3]}</div><q>${s[4]}</q></article>`).join('');
+$('#scholGrid').innerHTML=SCHOL.map((s,i)=>`<article class="card schol"><span><span class="tag w">⚠ Deadline: ${s[4]}</span></span><h3>${s[0]}</h3><div class="amt">${s[3]}</div><dl><div><dt>Offered by</dt><dd>${s[1]}</dd></div><div><dt>Eligibility</dt><dd>${s[2]}</dd></div></dl><button class="btn b-pri" style="background:linear-gradient(135deg,#D97706,var(--warn))" onclick="gate({t:'schol',id:${i}})">Apply ➜</button></article>`).join('');
+renderCareers();renderColleges();
+
+/* ---------- hero interactions ---------- */
+const STAGE={'10':'Showing careers you can start after 10th.','12':'Showing careers you can start after 12th.','deg':'Showing careers after your degree.'};
+function setStage(s){renderCareers(s);$('#stageNote').textContent=STAGE[s];$('#careers').scrollIntoView()}
+function doSearch(e){e.preventDefault();const q=$('#q').value.trim().toLowerCase();if(!q){toast('Please type what you want to become 🙂');return false}
+ const map={doctor:'med',nurse:'med',medical:'med',mbbs:'med',engineer:'eng',police:'gov',govt:'gov',government:'gov',teacher:'tea',business:'com',farmer:'agr',lawyer:'law',software:'it',computer:'it',artist:'art',diploma:'skl',iti:'skl'};
+ let id=null;for(const k in map)if(q.includes(k)){id=map[k];break}
+ if(!id){const m=CAREERS.find(c=>(c.en+c.ta).toLowerCase().includes(q));id=m&&m.id}
+ if(id){gate({t:'career',id})}else toast('No exact match. Please pick from the cards below 👇');return false}
+
+/* ---------- AUTH + gate ---------- */
+let user=store.get('cp_user'),pending=null;
+function paintUser(){$('#userBox').style.display=user?'flex':'none';$('#loginBtn').style.display=user?'none':'';if(user)$('#userName').textContent=user.name||'Student'}
+paintUser();
+function gate(a){if(user)return run(a);pending=a;openAuth()}
+function openAuth(){$('#authOv').classList.add('show');document.body.style.overflow='hidden';setTimeout(()=>document.querySelector('#fS2 input').focus(),50)}
+function closeAuth(){$('#authOv').classList.remove('show');document.body.style.overflow='';pending=null}
+function tab(t){const s=t==='s';$('#tS').classList.toggle('on',s);$('#tL').classList.toggle('on',!s);$('#fS2').style.display=s?'':'none';$('#fL').style.display=s?'none':''}
+function login(u){user=u;store.set('cp_user',u);paintUser();const a=pending;pending=null;$('#authOv').classList.remove('show');document.body.style.overflow='';toast('வரவேற்கிறோம் / Welcome, '+u.name+'! 🎉');if(a)setTimeout(()=>run(a),250)}
+function busy(f,on){const b=f.querySelector('button[type=submit]');if(on){b.dataset.t=b.innerHTML;b.innerHTML='<span class="spin"></span> Please wait…';b.disabled=true}else{b.innerHTML=b.dataset.t;b.disabled=false}}
+function submitAuth(e,m){e.preventDefault();const f=e.target,v=Object.fromEntries(new FormData(f)),er=$(m==='s'?'#eS':'#eL');er.textContent='';
+ if(m==='s'){if(!v.name.trim())return er.textContent='Please enter your name.',false;if(!/^[6-9]\d{9}$/.test(v.mob))return er.textContent='Please enter a valid 10-digit mobile number.',false;if(!v.cls)return er.textContent='Please choose your class.',false;if(v.pw.length<6)return er.textContent='Password needs at least 6 characters.',false}
+ else{if(!v.id.trim())return er.textContent='Please enter mobile number or email.',false;if(!v.pw)return er.textContent='Please enter your password.',false}
+ busy(f,true);setTimeout(()=>{busy(f,false);login({name:m==='s'?v.name.trim().split(' ')[0]:(store.get('cp_acc')||{}).name||'Student'});if(m==='s')store.set('cp_acc',{name:v.name.trim().split(' ')[0]})},900);return false}
+function googleLogin(){toast('Connecting to Google…');setTimeout(()=>login({name:'Student'}),900)}
+function forgot(e){e.preventDefault();toast('We will send a reset code to your mobile (demo).')}
+function logout(){user=null;store.set('cp_user',null);paintUser();toast('Logged out. See you soon!')}
+
+/* ---------- detail views ---------- */
+const rows=a=>a.map(r=>`<div class="row"><span>${r[0]}</span><b>${r[1]}</b></div>`).join('');
+function run(a){
+ let h='';
+ if(a.t==='career'){const c=CAREERS.find(x=>x.id===a.id);const cl=COLLEGES.filter(x=>c.courses.some(k=>k.toLowerCase().includes(x.c.toLowerCase().split(' ').slice(-1)[0])||x.c.toLowerCase().includes(c.en.toLowerCase().split(' ')[0])));
+  h=`<div class="ico" style="margin-bottom:10px">${c.ic}</div><h2>${B(c.ta,c.en)}</h2><p class="sub" style="margin:8px 0 14px">${c.desc}</p>${rows([['📘 Courses',c.courses.join(', ')],['📝 Exam',c.exam],['💰 Fees',c.fee]])}
+  <div class="journey" style="margin:14px 0"><i>Interest</i><i>Course</i><i>College</i><i>Fees</i><i>Videos</i><i>Exam</i></div>
+  <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr"><button class="btn b-pri" onclick="closeDet();location.hash='#colleges'">🏫 Find Colleges</button><button class="btn b-out" onclick="closeDet();location.hash='#videos'">▶ Watch Videos</button></div>`}
+ else if(a.t==='college'){const x=COLLEGES.find(c=>c.id===a.id);
+  h=`<span class="tag">${x.t}</span><h2 style="margin-top:8px">${x.n}</h2>${rows([['📍 Place',x.d+', Tamil Nadu'],['📘 Course',x.c],['💰 Annual fee','₹'+x.f.toLocaleString('en-IN')],['🛏 Hostel',x.h?'Available':'Not available'],['🎓 Scholarship',x.s?'Available':'Not available'],['⭐ Rating',x.r+' / 5'],['📈 Highlight',x.p]])}
+  <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr;margin-top:16px"><button class="btn b-pri" onclick="toast('Brochure downloaded (demo) ⬇')">⬇ Download Details</button><button class="btn b-out" onclick="run({t:'video',id:0})">▶ Watch Videos</button></div>`}
+ else if(a.t==='video'){const v=VIDEOS[a.id];h=`<h2>${v[0]}</h2><div class="thumb" style="background:linear-gradient(135deg,${v[3]});border-radius:18px;margin:16px 0;height:220px">${v[4]}<span class="play">▶</span><span class="dur">${v[1]}</span></div><p class="sub">Video player opens here. Connect your YouTube video link for each topic.</p>`}
+ else if(a.t==='schol'){const s=SCHOL[a.id];h=`<h2>${s[0]}</h2><div class="amt" style="margin:8px 0">${s[3]}</div>${rows([['Offered by',s[1]],['Eligibility',s[2]],['Deadline',s[4]]])}<button class="btn b-ok" style="width:100%;margin-top:16px" onclick="toast('Application started (demo) ✔')">Apply Now</button>`}
+ else if(a.t==='quiz'){return startQuiz()}
+ $('#detBody').innerHTML=h;$('#detOv').classList.add('show');document.body.style.overflow='hidden'}
+function closeDet(){$('#detOv').classList.remove('show');document.body.style.overflow=''}
+
+/* ---------- quiz ---------- */
+let qi=0,score={};
+function startQuiz(){qi=0;score={};KEYS.forEach(k=>score[k]=0);showQ()}
+function showQ(){
+ const q=QUESTIONS[qi];
+ $('#detBody').innerHTML=`<div style="display:flex;justify-content:space-between;font-weight:600;color:var(--mut)"><span>Question ${qi+1} of 100</span><span>${Math.round(qi)}%</span></div><div class="prog"><div style="width:${qi}%"></div></div><div class="qtxt" style="font-size:24px;margin:24px 0">${q.t}</div>
+ <div class="ans"><button class="y" onclick="ans(2)">👍 ஆம்<br><small>Yes</small></button><button onclick="ans(1)">🤔 ஒருவேளை<br><small>Maybe</small></button><button class="n" onclick="ans(0)">👎 இல்லை<br><small>No</small></button></div>`;
+ $('#detOv').classList.add('show');document.body.style.overflow='hidden'}
+function ans(v){score[QUESTIONS[qi].k]+=v;qi++;qi<100?showQ():result()}
+function result(){
+ const top=Object.entries(score).sort((a,b)=>b[1]-a[1]).slice(0,3);
+ $('#detBody').innerHTML=`<h2>🎉 உன் முதல் 3 தொழில்கள்<span class="en" style="display:block;font-size:.65em;color:var(--mut)">Your Top 3 Careers</span></h2><div class="res">${top.map(([k,s],i)=>{const c=CAREERS.find(x=>x.id===k);return `<div><span class="m">${['🥇','🥈','🥉'][i]}</span><span style="flex:1"><b>${c.ic} ${c.en} · ${c.ta}</b>${Math.round(s/20*100)}% match<span class="bar"><i style="width:${s/20*100}%"></i></span></span><button class="btn b-pri" style="min-height:44px;padding:0 12px" onclick="run({t:'career',id:'${k}'})">Explore</button></div>`}).join('')}</div>`}
+/* demo quiz card */
+const DEMO=['Do you enjoy helping sick people?','Do you like fixing machines?','Do you enjoy teaching others?','Do you love growing plants?'];let di=0;
+function demo(){di=(di+1)%DEMO.length;paintDemo()}
+function paintDemo(){$('#dt').textContent=DEMO[di];$('#dq').textContent='Question '+(di+1)+' of 100';$('#dp').style.width=(di+1)+'%'}paintDemo();
+
+/* ---------- misc ---------- */
+function mentor(e){e.preventDefault();const f=e.target.querySelector('button');f.innerHTML='<span class="spin"></span> Sending…';setTimeout(()=>{f.innerHTML='📞 Request Call Back';e.target.reset();toast('✔ Thank you! A mentor will call you soon.')},900);return false}
+let tt;function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('show'),3200)}
+$('#burger').onclick=()=>{const o=$('#links').classList.toggle('open');$('#burger').setAttribute('aria-expanded',o);$('#burger').textContent=o?'✕':'☰'};
+$('#links').addEventListener('click',e=>{if(e.target.tagName==='A'){$('#links').classList.remove('open');$('#burger').textContent='☰'}});
+$('#lang').addEventListener('click',e=>{const l=e.target.dataset.l;if(!l)return;document.body.dataset.lang=l;[...$('#lang').children].forEach(b=>b.classList.toggle('on',b===e.target));store.set('cp_lang',l)});
+const sl=store.get('cp_lang');if(sl){document.body.dataset.lang=sl;[...$('#lang').children].forEach(b=>b.classList.toggle('on',b.dataset.l===sl))}
+document.querySelectorAll('.ov').forEach(o=>o.addEventListener('click',e=>{if(e.target===o){o.id==='authOv'?closeAuth():closeDet()}}));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeAuth();closeDet()}});
+</script>
+</body>
+</html>

@@ -1,0 +1,841 @@
+{
+ "careers": [
+  {
+   "id": "eng",
+   "ic": "⚙️",
+   "ta": "பொறியியல்",
+   "en": "Engineering",
+   "tag": "Job Opportunities",
+   "stage": [
+    "12"
+   ],
+   "courses": [
+    "B.E / B.Tech Mechanical",
+    "B.E Civil",
+    "B.E ECE"
+   ],
+   "exam": "TNEA (Tamil Nadu), JEE Main",
+   "fee": "₹30,000 – ₹2,00,000 / year",
+   "desc": "Design and build machines, buildings and electronics. Strong jobs in core companies and IT.",
+   "v": "Engineering Admission Guide"
+  },
+  {
+   "id": "med",
+   "ic": "🩺",
+   "ta": "மருத்துவம் & செவிலியம்",
+   "en": "Medicine & Nursing",
+   "tag": "Free Guidance",
+   "stage": [
+    "12"
+   ],
+   "courses": [
+    "MBBS",
+    "B.Sc Nursing",
+    "B.Pharm"
+   ],
+   "exam": "NEET UG",
+   "fee": "₹15,000 – ₹12,00,000 / year",
+   "desc": "Serve people as a doctor, nurse or pharmacist. Nursing has excellent job demand in India and abroad.",
+   "v": "How to become a Nurse"
+  },
+  {
+   "id": "gov",
+   "ic": "🏛️",
+   "ta": "அரசு வேலைகள்",
+   "en": "Government Jobs",
+   "tag": "Job Opportunities",
+   "stage": [
+    "10",
+    "12",
+    "deg"
+   ],
+   "courses": [
+    "TNPSC Group 4 / 2",
+    "Police (SI/Constable)",
+    "SSC / Railways"
+   ],
+   "exam": "TNPSC, TNUSRB, SSC, RRB",
+   "fee": "Free to low-cost coaching",
+   "desc": "Stable, respected jobs in the state and central government. Start preparing early.",
+   "v": "Government Exam Preparation"
+  },
+  {
+   "id": "tea",
+   "ic": "📚",
+   "ta": "ஆசிரியர் பணி",
+   "en": "Teaching",
+   "tag": "Free Guidance",
+   "stage": [
+    "12",
+    "deg"
+   ],
+   "courses": [
+    "D.El.Ed",
+    "B.Ed",
+    "B.A / B.Sc + TET"
+   ],
+   "exam": "TNTET, CTET",
+   "fee": "₹10,000 – ₹60,000 / year",
+   "desc": "Shape the next generation. Government school teacher jobs through TET exams.",
+   "v": "Best Courses After 12th"
+  },
+  {
+   "id": "art",
+   "ic": "🎨",
+   "ta": "கலை & வடிவமைப்பு",
+   "en": "Arts & Design",
+   "tag": "Free Guidance",
+   "stage": [
+    "12",
+    "deg"
+   ],
+   "courses": [
+    "B.A Tamil / English",
+    "B.Des",
+    "Fine Arts"
+   ],
+   "exam": "NID DAT, UCEED, college entrance",
+   "fee": "₹8,000 – ₹1,50,000 / year",
+   "desc": "Creative careers in design, media, animation, literature and fine arts.",
+   "v": "Best Courses After 12th"
+  },
+  {
+   "id": "com",
+   "ic": "💼",
+   "ta": "வணிகம்",
+   "en": "Commerce & Business",
+   "tag": "Job Opportunities",
+   "stage": [
+    "12",
+    "deg"
+   ],
+   "courses": [
+    "B.Com",
+    "BBA",
+    "CA / CMA"
+   ],
+   "exam": "CUET, CA Foundation",
+   "fee": "₹10,000 – ₹80,000 / year",
+   "desc": "Accounts, banking, finance and starting your own business.",
+   "v": "How to Choose the Right College"
+  },
+  {
+   "id": "agr",
+   "ic": "🌱",
+   "ta": "வேளாண்மை",
+   "en": "Agriculture",
+   "tag": "Free Guidance",
+   "stage": [
+    "12",
+    "deg"
+   ],
+   "courses": [
+    "B.Sc Agriculture",
+    "B.Sc Horticulture",
+    "Diploma in Agri"
+   ],
+   "exam": "TNAU Counselling, ICAR AIEEA",
+   "fee": "₹15,000 – ₹70,000 / year",
+   "desc": "Modern farming, agri-business and government agriculture officer jobs.",
+   "v": "Best Courses After 12th"
+  },
+  {
+   "id": "it",
+   "ic": "💻",
+   "ta": "கணினி & ஐடி",
+   "en": "IT & Computer Jobs",
+   "tag": "Job Opportunities",
+   "stage": [
+    "12",
+    "deg"
+   ],
+   "courses": [
+    "B.Sc Computer Science",
+    "BCA",
+    "B.Tech IT"
+   ],
+   "exam": "CUET, TNEA, college entrance",
+   "fee": "₹20,000 – ₹1,50,000 / year",
+   "desc": "Software, web and data jobs. You can even learn online for free.",
+   "v": "Engineering Admission Guide"
+  },
+  {
+   "id": "skl",
+   "ic": "🛠️",
+   "ta": "திறன் பயிற்சி & டிப்ளமா",
+   "en": "Skill Training & Diploma",
+   "tag": "Job Opportunities",
+   "stage": [
+    "10"
+   ],
+   "courses": [
+    "Polytechnic Diploma",
+    "ITI (Electrician, Fitter)",
+    "Paramedical Diploma"
+   ],
+   "exam": "Direct admission / 10th marks",
+   "fee": "₹2,000 – ₹30,000 / year",
+   "desc": "Quick way to a job after 10th. Many diploma courses allow lateral entry into degree.",
+   "v": "Best Courses After 12th"
+  },
+  {
+   "id": "law",
+   "ic": "⚖️",
+   "ta": "சட்டம்",
+   "en": "Law",
+   "tag": "Free Guidance",
+   "stage": [
+    "12",
+    "deg"
+   ],
+   "courses": [
+    "B.A LL.B (5 years)",
+    "LL.B (3 years)"
+   ],
+   "exam": "CLAT, TNDALU Entrance",
+   "fee": "₹20,000 – ₹2,00,000 / year",
+   "desc": "Become a lawyer, judge or legal advisor.",
+   "v": "How to Choose the Right College"
+  }
+ ],
+ "colleges": [
+  {
+   "name": "Madras Medical College",
+   "district": "Chennai",
+   "course": "MBBS",
+   "fee": 15000,
+   "type": "Government",
+   "hostel": true,
+   "scholarship": true,
+   "rating": 4.8,
+   "highlight": "Top govt medical college"
+  },
+  {
+   "name": "Govt. College of Nursing",
+   "district": "Madurai",
+   "course": "B.Sc Nursing",
+   "fee": 8000,
+   "type": "Government",
+   "hostel": true,
+   "scholarship": true,
+   "rating": 4.5,
+   "highlight": "90% placement"
+  },
+  {
+   "name": "College of Engineering, Guindy",
+   "district": "Chennai",
+   "course": "B.E Mechanical",
+   "fee": 45000,
+   "type": "Government",
+   "hostel": true,
+   "scholarship": true,
+   "rating": 4.7,
+   "highlight": "Top recruiters visit"
+  },
+  {
+   "name": "Government Polytechnic College",
+   "district": "Salem",
+   "course": "Diploma Mechanical",
+   "fee": 3000,
+   "type": "Government",
+   "hostel": true,
+   "scholarship": true,
+   "rating": 4.2,
+   "highlight": "Job in 3 years"
+  },
+  {
+   "name": "TNAU Agricultural College",
+   "district": "Coimbatore",
+   "course": "B.Sc Agriculture",
+   "fee": 25000,
+   "type": "Government",
+   "hostel": true,
+   "scholarship": true,
+   "rating": 4.6,
+   "highlight": "Govt officer jobs"
+  },
+  {
+   "name": "PSG College of Arts & Science",
+   "district": "Coimbatore",
+   "course": "B.Sc Computer Science",
+   "fee": 60000,
+   "type": "Aided",
+   "hostel": true,
+   "scholarship": false,
+   "rating": 4.4,
+   "highlight": "IT placements"
+  },
+  {
+   "name": "Govt. Arts College",
+   "district": "Tiruchirappalli",
+   "course": "B.Com",
+   "fee": 4000,
+   "type": "Government",
+   "hostel": false,
+   "scholarship": true,
+   "rating": 4.1,
+   "highlight": "Bank exam coaching"
+  },
+  {
+   "name": "Sri Ramakrishna Engineering College",
+   "district": "Coimbatore",
+   "course": "B.E ECE",
+   "fee": 110000,
+   "type": "Private",
+   "hostel": true,
+   "scholarship": true,
+   "rating": 4.3,
+   "highlight": "85% placement"
+  },
+  {
+   "name": "Govt. Law College",
+   "district": "Madurai",
+   "course": "LL.B",
+   "fee": 12000,
+   "type": "Government",
+   "hostel": false,
+   "scholarship": true,
+   "rating": 4.2,
+   "highlight": "Good bar placement"
+  },
+  {
+   "name": "Annamalai University",
+   "district": "Cuddalore",
+   "course": "B.Ed",
+   "fee": 35000,
+   "type": "Government",
+   "hostel": true,
+   "scholarship": true,
+   "rating": 4.3,
+   "highlight": "TET coaching"
+  },
+  {
+   "name": "Loyola College",
+   "district": "Chennai",
+   "course": "BBA",
+   "fee": 70000,
+   "type": "Aided",
+   "hostel": true,
+   "scholarship": false,
+   "rating": 4.6,
+   "highlight": "Top campus jobs"
+  },
+  {
+   "name": "Thiagarajar College",
+   "district": "Madurai",
+   "course": "BCA",
+   "fee": 28000,
+   "type": "Aided",
+   "hostel": true,
+   "scholarship": true,
+   "rating": 4.4,
+   "highlight": "Software jobs"
+  }
+ ],
+ "videos": [
+  {
+   "title": "How to become a Nurse",
+   "duration": "12:30",
+   "category": "Medicine",
+   "colors": "#FCA5A5,#FDE68A",
+   "icon": "🩺"
+  },
+  {
+   "title": "Government Exam Preparation",
+   "duration": "18:05",
+   "category": "Govt Jobs",
+   "colors": "#A5B4FC,#C7D2FE",
+   "icon": "🏛️"
+  },
+  {
+   "title": "Best Courses After 12th",
+   "duration": "09:45",
+   "category": "Guidance",
+   "colors": "#6EE7B7,#A7F3D0",
+   "icon": "📘"
+  },
+  {
+   "title": "Engineering Admission Guide",
+   "duration": "14:20",
+   "category": "Engineering",
+   "colors": "#FDBA74,#FDE68A",
+   "icon": "⚙️"
+  },
+  {
+   "title": "Scholarships for Village Students",
+   "duration": "08:10",
+   "category": "Scholarship",
+   "colors": "#FCD34D,#FEF3C7",
+   "icon": "🎓"
+  },
+  {
+   "title": "How to Choose the Right College",
+   "duration": "11:00",
+   "category": "Guidance",
+   "colors": "#93C5FD,#C7D2FE",
+   "icon": "🏫"
+  }
+ ],
+ "stories": [
+  {
+   "icon": "👨‍🎓",
+   "name": "Karthik",
+   "village": "Kuruvikulam, Tenkasi",
+   "course": "B.E Mechanical – Govt. College",
+   "achievement": "Got ₹6 LPA job at a core company. First graduate in family."
+  },
+  {
+   "icon": "👩‍⚕️",
+   "name": "Meena",
+   "village": "Thiruvennainallur, Villupuram",
+   "course": "B.Sc Nursing",
+   "achievement": "Now works as a staff nurse in Chennai and supports her family."
+  },
+  {
+   "icon": "👩‍🏫",
+   "name": "Priya",
+   "village": "Melur, Madurai",
+   "course": "B.Ed + TNTET",
+   "achievement": "Cleared TET and became a government school teacher."
+  },
+  {
+   "icon": "👮",
+   "name": "Selvam",
+   "village": "Pennadam, Cuddalore",
+   "course": "Police Sub-Inspector",
+   "achievement": "Prepared with free videos and cleared TNUSRB in first attempt."
+  }
+ ],
+ "scholarships": [
+  {
+   "name": "First Graduate Scholarship",
+   "by": "TN Govt",
+   "eligibility": "First graduate in family, income < ₹2.5 lakh",
+   "amount": "Full tuition fee",
+   "deadline": "31 Dec 2026"
+  },
+  {
+   "name": "Pudhumai Penn",
+   "by": "TN Govt",
+   "eligibility": "Girls from govt schools pursuing degree/diploma",
+   "amount": "₹1,000 / month",
+   "deadline": "Rolling"
+  },
+  {
+   "name": "Central Sector Scholarship",
+   "by": "Govt of India",
+   "eligibility": "Top 20 percentile in 12th, income < ₹4.5 lakh",
+   "amount": "₹12,000 / year",
+   "deadline": "31 Oct 2026"
+  },
+  {
+   "name": "Post-Matric SC/ST/BC Scholarship",
+   "by": "TN Govt",
+   "eligibility": "SC/ST/BC/MBC students",
+   "amount": "Fees + maintenance",
+   "deadline": "30 Nov 2026"
+  }
+ ],
+ "questions": [
+  {
+   "area": "eng",
+   "text": "I like taking machines apart to see how they work"
+  },
+  {
+   "area": "med",
+   "text": "Do you enjoy helping sick people?"
+  },
+  {
+   "area": "gov",
+   "text": "I want a stable job with a good pension"
+  },
+  {
+   "area": "tea",
+   "text": "I enjoy explaining things to others"
+  },
+  {
+   "area": "art",
+   "text": "I love drawing or painting"
+  },
+  {
+   "area": "com",
+   "text": "I like calculating money and profits"
+  },
+  {
+   "area": "agr",
+   "text": "I love working in farms and gardens"
+  },
+  {
+   "area": "it",
+   "text": "I enjoy using mobile phones and computers"
+  },
+  {
+   "area": "skl",
+   "text": "I prefer learning by doing, not only reading"
+  },
+  {
+   "area": "law",
+   "text": "I like debating and arguing a point"
+  },
+  {
+   "area": "eng",
+   "text": "I enjoy fixing bicycles, pumps or motors"
+  },
+  {
+   "area": "med",
+   "text": "I stay calm when someone is hurt"
+  },
+  {
+   "area": "gov",
+   "text": "I like to serve the people of my village"
+  },
+  {
+   "area": "tea",
+   "text": "Children like to be around me"
+  },
+  {
+   "area": "art",
+   "text": "I enjoy singing, dancing or acting"
+  },
+  {
+   "area": "com",
+   "text": "I dream of starting my own shop or business"
+  },
+  {
+   "area": "agr",
+   "text": "I enjoy growing plants and trees"
+  },
+  {
+   "area": "it",
+   "text": "I like playing and learning computer games"
+  },
+  {
+   "area": "skl",
+   "text": "I want to start earning early"
+  },
+  {
+   "area": "law",
+   "text": "I get upset when someone is treated unfairly"
+  },
+  {
+   "area": "eng",
+   "text": "I like drawing plans of buildings or machines"
+  },
+  {
+   "area": "med",
+   "text": "I like biology and the human body"
+  },
+  {
+   "area": "gov",
+   "text": "I follow current news and politics daily"
+  },
+  {
+   "area": "tea",
+   "text": "I like helping friends understand lessons"
+  },
+  {
+   "area": "art",
+   "text": "I like writing stories or poems"
+  },
+  {
+   "area": "com",
+   "text": "I am good at keeping accounts"
+  },
+  {
+   "area": "agr",
+   "text": "I like taking care of cows, goats or poultry"
+  },
+  {
+   "area": "it",
+   "text": "I want to build apps or websites"
+  },
+  {
+   "area": "skl",
+   "text": "I enjoy electrical or plumbing work"
+  },
+  {
+   "area": "law",
+   "text": "I want to help people get justice"
+  },
+  {
+   "area": "eng",
+   "text": "I am good at maths problems"
+  },
+  {
+   "area": "med",
+   "text": "I feel happy caring for elders and children"
+  },
+  {
+   "area": "gov",
+   "text": "I would be proud to wear a uniform"
+  },
+  {
+   "area": "tea",
+   "text": "I am patient when someone is slow to learn"
+  },
+  {
+   "area": "art",
+   "text": "I notice colours and designs everywhere"
+  },
+  {
+   "area": "com",
+   "text": "I enjoy buying and selling"
+  },
+  {
+   "area": "agr",
+   "text": "I want to improve farming in my village"
+  },
+  {
+   "area": "it",
+   "text": "I learn new technology quickly"
+  },
+  {
+   "area": "skl",
+   "text": "I like repairing mobiles or TVs"
+  },
+  {
+   "area": "law",
+   "text": "I like reading and understanding rules"
+  },
+  {
+   "area": "eng",
+   "text": "I like building things with my hands"
+  },
+  {
+   "area": "med",
+   "text": "I can handle the sight of blood"
+  },
+  {
+   "area": "gov",
+   "text": "I am ready to prepare for competitive exams"
+  },
+  {
+   "area": "tea",
+   "text": "I enjoy speaking in front of a group"
+  },
+  {
+   "area": "art",
+   "text": "I like taking photos or making videos"
+  },
+  {
+   "area": "com",
+   "text": "I like to understand banks and loans"
+  },
+  {
+   "area": "agr",
+   "text": "I am interested in soil, water and weather"
+  },
+  {
+   "area": "it",
+   "text": "I like typing and working on a computer"
+  },
+  {
+   "area": "skl",
+   "text": "I am good at using tools"
+  },
+  {
+   "area": "law",
+   "text": "I speak clearly and confidently"
+  },
+  {
+   "area": "eng",
+   "text": "Bridges, roads and tall buildings fascinate me"
+  },
+  {
+   "area": "med",
+   "text": "I would like to work in a hospital"
+  },
+  {
+   "area": "gov",
+   "text": "I like helping people get government schemes"
+  },
+  {
+   "area": "tea",
+   "text": "I respect teachers and want to be like them"
+  },
+  {
+   "area": "art",
+   "text": "I enjoy decorating and kolam designs"
+  },
+  {
+   "area": "com",
+   "text": "I can bargain well and talk to customers"
+  },
+  {
+   "area": "agr",
+   "text": "I like learning new farming machines"
+  },
+  {
+   "area": "it",
+   "text": "I enjoy solving logical puzzles"
+  },
+  {
+   "area": "skl",
+   "text": "I want to learn a skill quickly in 1–2 years"
+  },
+  {
+   "area": "law",
+   "text": "I enjoy court and police stories"
+  },
+  {
+   "area": "eng",
+   "text": "I enjoy science experiments"
+  },
+  {
+   "area": "med",
+   "text": "I want to save lives"
+  },
+  {
+   "area": "gov",
+   "text": "I am disciplined and follow rules"
+  },
+  {
+   "area": "tea",
+   "text": "I like reading books"
+  },
+  {
+   "area": "art",
+   "text": "I want to design clothes or posters"
+  },
+  {
+   "area": "com",
+   "text": "I like to plan and save money"
+  },
+  {
+   "area": "agr",
+   "text": "I want to help farmers earn more"
+  },
+  {
+   "area": "it",
+   "text": "I am curious how the internet works"
+  },
+  {
+   "area": "skl",
+   "text": "I like driving or working with vehicles"
+  },
+  {
+   "area": "law",
+   "text": "I like to read newspapers"
+  },
+  {
+   "area": "eng",
+   "text": "I like to know how electricity works"
+  },
+  {
+   "area": "med",
+   "text": "I listen carefully to people's problems"
+  },
+  {
+   "area": "gov",
+   "text": "I want to become an officer one day"
+  },
+  {
+   "area": "tea",
+   "text": "I want to improve education in my village"
+  },
+  {
+   "area": "art",
+   "text": "I like creating new ideas"
+  },
+  {
+   "area": "com",
+   "text": "I enjoy marketing and advertising ideas"
+  },
+  {
+   "area": "agr",
+   "text": "I enjoy being outdoors in nature"
+  },
+  {
+   "area": "it",
+   "text": "I like editing photos or videos on the phone"
+  },
+  {
+   "area": "skl",
+   "text": "I enjoy tailoring, cooking or beauty work"
+  },
+  {
+   "area": "law",
+   "text": "I would like to wear a lawyer's black coat"
+  },
+  {
+   "area": "eng",
+   "text": "I like solving puzzles step by step"
+  },
+  {
+   "area": "med",
+   "text": "I am ready to study for many years"
+  },
+  {
+   "area": "gov",
+   "text": "I enjoy reading general knowledge"
+  },
+  {
+   "area": "tea",
+   "text": "I enjoy making learning fun"
+  },
+  {
+   "area": "art",
+   "text": "I enjoy Tamil literature and culture"
+  },
+  {
+   "area": "com",
+   "text": "I want to become a business owner"
+  },
+  {
+   "area": "agr",
+   "text": "I am curious about organic farming"
+  },
+  {
+   "area": "it",
+   "text": "I would like to work in a big IT company"
+  },
+  {
+   "area": "skl",
+   "text": "I would like to run my own workshop"
+  },
+  {
+   "area": "law",
+   "text": "I stay calm in arguments"
+  },
+  {
+   "area": "eng",
+   "text": "I would like to design new vehicles"
+  },
+  {
+   "area": "med",
+   "text": "I like learning about medicines and health"
+  },
+  {
+   "area": "gov",
+   "text": "I can stay fit and active for physical tests"
+  },
+  {
+   "area": "tea",
+   "text": "I like organising classes or games for kids"
+  },
+  {
+   "area": "art",
+   "text": "I would like to work in cinema or media"
+  },
+  {
+   "area": "com",
+   "text": "I like working with numbers and tables"
+  },
+  {
+   "area": "agr",
+   "text": "I would like to sell farm products"
+  },
+  {
+   "area": "it",
+   "text": "I like to learn from YouTube videos"
+  },
+  {
+   "area": "skl",
+   "text": "I want a job close to my home"
+  },
+  {
+   "area": "law",
+   "text": "I remember facts and details well"
+  }
+ ]
+}
