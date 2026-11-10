@@ -666,3 +666,11 @@ header.top{overflow:visible}
  .nav2{padding-left:clamp(20px,2vw,40px)!important}
  .logo-img{height:clamp(110px,19vh,160px)!important;margin-bottom:calc(-1 * (clamp(110px,19vh,160px) - 64px))!important}
 }
+
+/* ===== small logo left of the name ===== */
+.logo-small{display:block;height:clamp(46px,7.4vh,62px);width:auto;filter:drop-shadow(0 3px 6px rgba(0,0,0,.35))}
+.brand{gap:12px;align-self:center}
+@media(min-width:1001px){.nav2{padding-left:clamp(110px,10vw,190px)!important}}
+@media(max-width:760px){.logo-small{height:42px}}
+.m-careers{height:clamp(54px,11vh,90px)!important;top:11%!important;right:7%!important}
+.m-careers svg{overflow:visible}

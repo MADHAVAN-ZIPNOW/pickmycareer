@@ -8,7 +8,10 @@ export function Header({ user, lang, setLang, logout, login }) {
   return (
     <header className="top">
       <div className="nav2">
-        <a href="/" className="brand logo-only" aria-label="தேடித் தெளி உண்மையாக்கு"><img className="logo-img" src="/logo.png" alt="தேடித் தெளி உண்மையாக்கு" width="420" height="433" /></a>
+        <a href="/" className="brand" aria-label="அறி">
+          <img className="logo-small" src="/logo.png" alt="" width="420" height="433" />
+          <span><b><span className="ta"><em>அறி</em></span><span className="en"><em>Ari</em></span></b><small><B ta="கற்றுக்கொள் · வளர் · எதிர்காலத்தை உருவாக்கு" en="LEARN · GROW · BUILD YOUR FUTURE" /></small></span>
+        </a>
         <div className="navr">
           <span className="pill act"><svg className="ni" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5" /><path d="M5.5 10v10h13V10" /><path d="M10 20v-5.5h4V20" /></svg> <span><B ta="முகப்பு" en="Home" /></span></span>
           <button className={'pill lang' + (lang === 'ta' ? ' on' : '')} onClick={() => pick('ta')}><svg className="ni" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18" /><path d="M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" /></svg> <span>தமிழ்</span></button>
@@ -65,12 +68,12 @@ const Gopuram = () => (
 )
 
 const Chart = () => (
-  <svg viewBox="0 0 170 135">
-    <g fill="#fff" fillOpacity=".12" stroke="#E9D5FF" strokeOpacity=".55" strokeWidth="3">
-      <rect x="6" y="88" width="22" height="42" rx="3" /><rect x="38" y="70" width="22" height="60" rx="3" /><rect x="70" y="52" width="22" height="78" rx="3" /><rect x="102" y="34" width="22" height="96" rx="3" /><rect x="134" y="16" width="22" height="114" rx="3" />
+  <svg viewBox="-6 -6 190 150" overflow="visible">
+    <g fill="#fff" fillOpacity=".3">
+      <rect x="4" y="96" width="24" height="40" rx="4" /><rect x="38" y="76" width="24" height="60" rx="4" /><rect x="72" y="58" width="24" height="78" rx="4" /><rect x="106" y="40" width="24" height="96" rx="4" /><rect x="140" y="20" width="24" height="116" rx="4" />
     </g>
-    <path d="M6 84l36-30 30 14 56-50" stroke="#F5F3FF" strokeOpacity=".75" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-    <path d="M110 12h30v30" stroke="#F5F3FF" strokeOpacity=".75" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+    <path d="M4 82L48 50l32 16L150 14" stroke="#fff" strokeWidth="9" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+    <path d="M122 10l30 3-3 30" stroke="#fff" strokeWidth="9" strokeLinecap="round" strokeLinejoin="round" fill="none" />
   </svg>
 )
 
