@@ -70,7 +70,7 @@ const Gopuram = () => (
 const Chart = () => (
   <svg viewBox="-6 -6 190 150" overflow="visible">
     <g fill="#fff" fillOpacity=".3">
-      <rect x="4" y="96" width="24" height="40" rx="4" /><rect x="38" y="76" width="24" height="60" rx="4" /><rect x="72" y="58" width="24" height="78" rx="4" /><rect x="106" y="40" width="24" height="96" rx="4" /><rect x="140" y="20" width="24" height="116" rx="4" />
+      <rect x="4" y="108" width="24" height="28" rx="4" /><rect x="38" y="96" width="24" height="40" rx="4" /><rect x="72" y="84" width="24" height="52" rx="4" /><rect x="106" y="70" width="24" height="66" rx="4" /><rect x="140" y="56" width="24" height="80" rx="4" />
     </g>
     <path d="M4 82L48 50l32 16L150 14" stroke="#fff" strokeWidth="9" strokeLinecap="round" strokeLinejoin="round" fill="none" />
     <path d="M122 10l30 3-3 30" stroke="#fff" strokeWidth="9" strokeLinecap="round" strokeLinejoin="round" fill="none" />
