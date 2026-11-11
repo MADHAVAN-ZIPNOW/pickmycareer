@@ -498,12 +498,12 @@ body[data-lang=both] .copy h1 .en{font-size:.55em;margin-top:2px}
 /* ===== Pongal festival look ===== */
 body{background:radial-gradient(900px 420px at 12% 18%,#FFF7CC,transparent 60%),linear-gradient(180deg,#FFFBEA,#FEF3C7 55%,#FDE7A8)}
 @media(min-width:1001px){
- .bgphoto{background:url(/pongal.jpg) 100% 50%/cover no-repeat;width:58%;
+ .bgphoto{background:var(--pg) 100% 50%/cover no-repeat;width:58%;
   -webkit-mask-image:linear-gradient(to right,transparent 0,#000 12%),linear-gradient(to bottom,#000 86%,transparent 100%);
   mask-image:linear-gradient(to right,transparent 0,#000 12%),linear-gradient(to bottom,#000 86%,transparent 100%);
   -webkit-mask-composite:source-in;mask-composite:intersect}
 }
-@media(max-width:1000px){.bgphoto{background:linear-gradient(180deg,rgba(255,251,234,.88),rgba(255,251,234,.3)),url(/pongal.jpg) 80% 50%/cover}}
+@media(max-width:1000px){.bgphoto{background:linear-gradient(180deg,rgba(255,251,234,.88),rgba(255,251,234,.3)),var(--pg) 80% 50%/cover}}
 .mark{position:absolute;right:6%;bottom:22%;width:clamp(46px,8vh,84px);opacity:.16;pointer-events:none;z-index:0}
 .mark svg{width:100%;height:auto;display:block}
 .wave{filter:none;opacity:1}
@@ -540,7 +540,7 @@ body{background:radial-gradient(800px 380px at 20% 22%,rgba(255,255,255,.9),tran
 .decor{z-index:6}
 .decor .ground{z-index:-1}
 @media(min-width:1001px){
- .bgphoto{background:url(/pongal.jpg) 100% 40%/cover no-repeat;width:56%;
+ .bgphoto{background:var(--pg) 100% 40%/cover no-repeat;width:56%;
   -webkit-mask-image:linear-gradient(to right,transparent 0,#000 14%),linear-gradient(to bottom,#000 88%,transparent 100%);
   mask-image:linear-gradient(to right,transparent 0,#000 14%),linear-gradient(to bottom,#000 88%,transparent 100%);
   -webkit-mask-composite:source-in;mask-composite:intersect}
@@ -588,7 +588,7 @@ body{background:radial-gradient(900px 420px at 12% 18%,#FFF7CC,transparent 60%),
 .wave{display:block!important;opacity:1}
 .wave svg path{fill:#2F7BF0;opacity:.9}
 @media(min-width:1001px){
- .bgphoto{background:url(/pongal.jpg) 100% 50%/cover no-repeat;width:58%}
+ .bgphoto{background:var(--pg) 100% 50%/cover no-repeat;width:58%}
 }
 @media(min-width:1001px){
  .rightart{top:clamp(58px,9vh,82px);width:clamp(40px,3.8vw,80px);background-size:100% 100%;background-position:right top;-webkit-mask-image:linear-gradient(to left,#000 60%,transparent);mask-image:linear-gradient(to left,#000 60%,transparent)}
@@ -696,7 +696,7 @@ header.top{overflow:visible}
  .copy .lead{font-size:15px!important;max-width:100%!important}
  .chips{display:flex!important;flex-wrap:wrap!important;gap:8px!important}
  .chip{padding:4px 12px 4px 4px}.chip small{display:none!important}
- .bgphoto{position:relative!important;inset:auto!important;display:block;height:200px;margin:12px 0 0;border-radius:22px;background:url(/pongal.jpg) 70% 50%/cover no-repeat!important;-webkit-mask-image:none!important;mask-image:none!important;box-shadow:0 12px 26px rgba(120,70,0,.25);border:3px solid #fff}
+ .bgphoto{position:relative!important;inset:auto!important;display:block;height:200px;margin:12px 0 0;border-radius:22px;background:var(--pg) 70% 50%/cover no-repeat!important;-webkit-mask-image:none!important;mask-image:none!important;box-shadow:0 12px 26px rgba(120,70,0,.25);border:3px solid #fff}
  .four{display:grid!important;grid-template-columns:1fr 1fr!important;gap:12px!important;height:auto!important;max-height:none!important;flex:none!important;margin-top:14px}
  .big4{min-height:230px;padding:12px!important}
  .big4 p{display:-webkit-box!important;font-size:13px!important;-webkit-line-clamp:3;line-height:1.35}
@@ -856,3 +856,6 @@ header.top{overflow:visible}
  .auth-side .auth-head img{height:56px}
  .auth-main .err{display:none}
 }
+
+:root{--pg:url(/pongal.jpg)}
+body[data-lang="ta"]{--pg:url(/pongal-ta.jpg)}
