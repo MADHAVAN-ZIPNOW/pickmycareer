@@ -98,35 +98,43 @@ const Tower = () => (
   </svg>
 )
 
-// Paddy (rice) plant: arching panicle heavy with grains + leaf blades
-const ARC = (t) => {
-  // quadratic curve from the stalk top to the drooping tip
-  const p0 = [54, 62], p1 = [96, 8], p2 = [128, 78]
-  const x = (1 - t) * (1 - t) * p0[0] + 2 * (1 - t) * t * p1[0] + t * t * p2[0]
-  const y = (1 - t) * (1 - t) * p0[1] + 2 * (1 - t) * t * p1[1] + t * t * p2[1]
-  const dx = 2 * (1 - t) * (p1[0] - p0[0]) + 2 * t * (p2[0] - p1[0])
-  const dy = 2 * (1 - t) * (p1[1] - p0[1]) + 2 * t * (p2[1] - p1[1])
-  return { x, y, ang: (Math.atan2(dy, dx) * 180) / Math.PI }
+// Paddy: three heavy drooping ears with many grains, on stalks with leaf blades
+const bez = (p0, p1, p2, t) => {
+  const u = 1 - t
+  const x = u * u * p0[0] + 2 * u * t * p1[0] + t * t * p2[0]
+  const y = u * u * p0[1] + 2 * u * t * p1[1] + t * t * p2[1]
+  const dx = 2 * u * (p1[0] - p0[0]) + 2 * t * (p2[0] - p1[0])
+  const dy = 2 * u * (p1[1] - p0[1]) + 2 * t * (p2[1] - p1[1])
+  return { x, y, a: (Math.atan2(dy, dx) * 180) / Math.PI }
 }
-const GRAINS = Array.from({ length: 11 }, (_, i) => {
-  const t = 0.08 + i * 0.085
-  const { x, y, ang } = ARC(t)
-  const size = 1 - i * 0.025
-  return [
-    { x: x + Math.cos(((ang + 90) * Math.PI) / 180) * 5, y: y + Math.sin(((ang + 90) * Math.PI) / 180) * 5, a: ang + 35, s: size },
-    { x: x - Math.cos(((ang + 90) * Math.PI) / 180) * 5, y: y - Math.sin(((ang + 90) * Math.PI) / 180) * 5, a: ang - 35, s: size },
-    { x, y, a: ang + 90, s: size },
-  ]
-}).flat()
+const EARS = [
+  { p: [[70, 80], [64, 10], [20, 40]], n: 15, k: 1 },
+  { p: [[100, 86], [112, 16], [152, 56]], n: 15, k: 1 },
+  { p: [[85, 100], [86, 40], [66, 110]], n: 12, k: 0.9 },
+]
+const earGrains = EARS.flatMap(({ p, n, k }, ei) =>
+  Array.from({ length: n }, (_, i) => {
+    const t = 0.1 + (i / (n - 1)) * 0.88
+    const { x, y, a } = bez(p[0], p[1], p[2], t)
+    const s = k * (1.15 - t * 0.35)
+    const nx = Math.cos(((a + 90) * Math.PI) / 180)
+    const ny = Math.sin(((a + 90) * Math.PI) / 180)
+    return [
+      { x: x + nx * 5.5 * s, y: y + ny * 5.5 * s, a: a + 28, s },
+      { x: x - nx * 5.5 * s, y: y - ny * 5.5 * s, a: a - 28, s },
+      { x, y, a: a + 8, s },
+    ].map((g, gi) => ({ ...g, key: ei + '_' + i + '_' + gi }))
+  }).flat()
+)
 
 const Leaves = () => (
-  <svg viewBox="0 0 150 170">
-    <g fill="#fff">
-      <path d="M52 170C50 130 38 96 14 66c14 4 30 22 38 50z" opacity=".75" />
-      <path d="M58 170c2-40 14-74 36-94-6 36-12 64-30 94z" opacity=".75" />
-      <path d="M50 170c-1-50 2-92 6-112l4 1c-2 40-2 76 0 111z" />
-      {GRAINS.map((g, i) => <ellipse key={i} cx={g.x} cy={g.y} rx={6.5 * g.s} ry={2.9 * g.s} transform={'rotate(' + g.a + ' ' + g.x + ' ' + g.y + ')'} />)}
-      <path d="M56 62C86 6 120 12 130 80" stroke="#fff" strokeWidth="2.4" fill="none" strokeLinecap="round" />
+  <svg viewBox="0 0 170 200">
+    <g fill="#FFF3B0">
+      <path d="M86 200C84 150 70 112 44 86c18 6 36 28 44 62z" opacity=".55" />
+      <path d="M92 200c4-46 20-84 44-104-6 40-14 74-34 104z" opacity=".55" />
+      <path d="M72 200c-2-40 0-74 4-112l5 1c-1 38-1 74 1 111z" />
+      <path d="M96 200c0-34 2-70 4-110l5 1c-1 40-2 72-3 109z" />
+      {earGrains.map((g) => <ellipse key={g.key} cx={g.x} cy={g.y} rx={7.4 * g.s} ry={3.3 * g.s} transform={'rotate(' + g.a + ' ' + g.x + ' ' + g.y + ')'} />)}
     </g>
   </svg>
 )

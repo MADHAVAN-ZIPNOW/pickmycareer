@@ -801,3 +801,8 @@ header.top{overflow:visible}
 .m-quiz{display:none!important}
 .k1{background:linear-gradient(180deg,rgba(22,163,74,.05) 0%,rgba(5,100,50,.30) 52%,rgba(4,70,40,.82) 100%),url(/paddy.jpg) 55% 25%/cover no-repeat!important}
 .k1 .i img{filter:drop-shadow(0 6px 10px rgba(0,0,0,.45))}
+
+/* ===== first card: plain green again + paddy watermark ===== */
+.k1{background:linear-gradient(145deg,#2FD868 0%,#14B24A 48%,#0B8A3A 100%)!important}
+.m-quiz{display:block!important;opacity:.95!important;height:clamp(84px,17vh,138px)!important;top:6%!important;right:5%!important}
+.m-quiz svg{overflow:visible}
