@@ -807,3 +807,52 @@ header.top{overflow:visible}
 .m-quiz{display:block!important;opacity:.95!important;height:clamp(84px,17vh,138px)!important;top:6%!important;right:5%!important}
 .m-quiz svg{overflow:visible}
 .m-quiz{opacity:.2!important;height:clamp(56px,11vh,90px)!important;top:8%!important;right:6%!important}
+
+/* ===== sign-up modal: wide, horizontal, no scrolling ===== */
+@media(min-width:861px){
+ .modal.auth{display:grid;grid-template-columns:300px 1fr;max-width:900px;width:min(94vw,900px);max-height:none;overflow:visible}
+ .auth-side{display:flex;flex-direction:column;justify-content:center;gap:16px;padding:26px 22px;background:linear-gradient(160deg,#FFF3C4 0%,#FFE29A 55%,#FFC95A 100%);border-radius:28px 0 0 28px}
+ .auth-side .auth-head{flex-direction:column;align-items:flex-start;padding:0;background:none;border:0;gap:12px}
+ .auth-side .auth-head img{height:96px}
+ .auth-side .auth-head h2{font-size:26px!important;line-height:1.25}
+ .auth-side .auth-head p{font-size:16px}
+ .auth-side .priv{margin:0;padding:0;font-size:14px;color:#7C2D12;text-align:left}
+ .auth-main{display:flex;flex-direction:column;justify-content:center;padding:18px 0 14px;min-width:0}
+ .auth-main .tabs{margin:0 24px 6px}
+ .auth-main .form{padding:10px 24px 0;gap:11px 14px}
+ .auth-main .inp{min-height:48px;font-size:16px}
+ .auth-main .form>button.btn{min-height:52px;font-size:18px}
+ .auth-main .or{margin:2px 24px}
+ .auth-main .gbtn{width:calc(100% - 48px);margin:0 24px;min-height:48px}
+ .modal.auth .x{top:12px;right:12px}
+}
+@media(min-width:861px) and (max-height:720px){
+ .auth-main .inp{min-height:42px;font-size:15px}
+ .auth-main .form{gap:8px 12px;padding-top:6px}
+ .auth-main .form label{font-size:13.5px;gap:3px}
+ .auth-main .tabs button{min-height:42px}
+ .auth-main .form>button.btn{min-height:46px;font-size:17px}
+ .auth-main .gbtn{min-height:42px}
+ .auth-side .auth-head img{height:72px}
+}
+/* phones keep a single scrolling column */
+@media(max-width:860px){
+ .auth-side{display:block}
+ .auth-side .priv{padding:6px 16px 18px;margin:0;font-size:13px}
+ .auth-main{display:block}
+ .auth-side .priv{order:3}
+}
+@media(min-width:861px) and (max-height:640px){
+ .modal.auth{width:min(96vw,860px)}
+ .auth-main{padding:10px 0 8px}
+ .auth-main .inp{min-height:38px;font-size:14.5px;border-radius:10px}
+ .auth-main .form{gap:5px 10px;padding-top:4px}
+ .auth-main .form label{font-size:12.5px;gap:2px}
+ .auth-main .tabs{margin-bottom:2px}.auth-main .tabs button{min-height:38px;font-size:15px}
+ .auth-main .form>button.btn{min-height:42px;font-size:16px}
+ .auth-main .or{margin:0 24px;font-size:12px}
+ .auth-main .gbtn{min-height:38px;font-size:14px}
+ .auth-side .auth-head h2{font-size:22px!important}
+ .auth-side .auth-head img{height:56px}
+ .auth-main .err{display:none}
+}
