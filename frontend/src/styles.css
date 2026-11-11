@@ -806,3 +806,4 @@ header.top{overflow:visible}
 .k1{background:linear-gradient(145deg,#2FD868 0%,#14B24A 48%,#0B8A3A 100%)!important}
 .m-quiz{display:block!important;opacity:.95!important;height:clamp(84px,17vh,138px)!important;top:6%!important;right:5%!important}
 .m-quiz svg{overflow:visible}
+.m-quiz{opacity:.2!important;height:clamp(56px,11vh,90px)!important;top:8%!important;right:6%!important}

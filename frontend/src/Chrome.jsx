@@ -98,45 +98,8 @@ const Tower = () => (
   </svg>
 )
 
-// Paddy: three heavy drooping ears with many grains, on stalks with leaf blades
-const bez = (p0, p1, p2, t) => {
-  const u = 1 - t
-  const x = u * u * p0[0] + 2 * u * t * p1[0] + t * t * p2[0]
-  const y = u * u * p0[1] + 2 * u * t * p1[1] + t * t * p2[1]
-  const dx = 2 * u * (p1[0] - p0[0]) + 2 * t * (p2[0] - p1[0])
-  const dy = 2 * u * (p1[1] - p0[1]) + 2 * t * (p2[1] - p1[1])
-  return { x, y, a: (Math.atan2(dy, dx) * 180) / Math.PI }
-}
-const EARS = [
-  { p: [[70, 80], [64, 10], [20, 40]], n: 15, k: 1 },
-  { p: [[100, 86], [112, 16], [152, 56]], n: 15, k: 1 },
-  { p: [[85, 100], [86, 40], [66, 110]], n: 12, k: 0.9 },
-]
-const earGrains = EARS.flatMap(({ p, n, k }, ei) =>
-  Array.from({ length: n }, (_, i) => {
-    const t = 0.1 + (i / (n - 1)) * 0.88
-    const { x, y, a } = bez(p[0], p[1], p[2], t)
-    const s = k * (1.15 - t * 0.35)
-    const nx = Math.cos(((a + 90) * Math.PI) / 180)
-    const ny = Math.sin(((a + 90) * Math.PI) / 180)
-    return [
-      { x: x + nx * 5.5 * s, y: y + ny * 5.5 * s, a: a + 28, s },
-      { x: x - nx * 5.5 * s, y: y - ny * 5.5 * s, a: a - 28, s },
-      { x, y, a: a + 8, s },
-    ].map((g, gi) => ({ ...g, key: ei + '_' + i + '_' + gi }))
-  }).flat()
-)
-
 const Leaves = () => (
-  <svg viewBox="0 0 170 200">
-    <g fill="#FFF3B0">
-      <path d="M86 200C84 150 70 112 44 86c18 6 36 28 44 62z" opacity=".55" />
-      <path d="M92 200c4-46 20-84 44-104-6 40-14 74-34 104z" opacity=".55" />
-      <path d="M72 200c-2-40 0-74 4-112l5 1c-1 38-1 74 1 111z" />
-      <path d="M96 200c0-34 2-70 4-110l5 1c-1 40-2 72-3 109z" />
-      {earGrains.map((g) => <ellipse key={g.key} cx={g.x} cy={g.y} rx={7.4 * g.s} ry={3.3 * g.s} transform={'rotate(' + g.a + ' ' + g.x + ' ' + g.y + ')'} />)}
-    </g>
-  </svg>
+  <svg viewBox="0 0 160 170"><g fill="#fff"><path d="M80 168C78 120 60 80 20 60c6 44 26 80 60 108z" /><path d="M82 168C86 110 110 70 150 48c-4 50-30 90-68 120z" /><path d="M80 120c-4-30-20-52-46-64 2 28 18 52 46 64z" opacity=".7" /><path d="M84 96c8-26 26-44 52-52-2 26-20 46-52 52z" opacity=".7" /></g></svg>
 )
 
 const Mark = ({ t }) => {
