@@ -4,7 +4,7 @@ import { Decor } from './Decor.jsx'
 import { ICONS, ChipTarget, ChipShield, ChipRocket } from './Icons.jsx'
 
 export function Header({ user, lang, setLang, logout, login }) {
-  const pick = (l) => setLang(lang === l ? 'both' : l)
+  const toggle = () => setLang(lang === 'ta' ? 'en' : 'ta')
   return (
     <header className="top">
       <div className="nav2">
@@ -14,8 +14,7 @@ export function Header({ user, lang, setLang, logout, login }) {
         </a>
         <div className="navr">
           <span className="pill act"><svg className="ni" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5" /><path d="M5.5 10v10h13V10" /><path d="M10 20v-5.5h4V20" /></svg> <span><B ta="முகப்பு" en="Home" /></span></span>
-          <button className={'pill lang' + (lang === 'ta' ? ' on' : '')} onClick={() => pick('ta')}><svg className="ni" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18" /><path d="M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" /></svg> <span>தமிழ்</span></button>
-          <button className={'pill sm lang' + (lang === 'en' ? ' on' : '')} onClick={() => pick('en')}>EN</button>
+          <button className="pill lang on" onClick={toggle} aria-label={lang === 'ta' ? 'Switch to English' : 'தமிழுக்கு மாற்று'}><svg className="ni" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18" /><path d="M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" /></svg> <span>{lang === 'ta' ? 'English' : 'தமிழ்'}</span></button>
           <i className="sep" />
           {user
             ? <button className="pill login" onClick={logout}><svg className="ni" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4" /><path d="M4 21c0-4.500 3.500-7 8-7s8 2.500 8 7" /></svg> <span>{user.name} · <B ta="வெளியேறு" en="Logout" /></span></button>
