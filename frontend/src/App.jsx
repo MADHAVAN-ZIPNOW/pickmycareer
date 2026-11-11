@@ -18,7 +18,7 @@ const CARDS = [
 export default function App() {
   const [user, setUser] = useState(null)
   const [pending, setPending] = useState(null)
-  const [authOpen, setAuthOpen] = useState(false)
+  const [authOpen, setAuthOpen] = useState(() => { try { return new URLSearchParams(location.search).has('auth') } catch { return false } })
   const [view, setView] = useState(null) // {t, id?}
   const [lang, setLang] = useState(loadLang)
   const [toastMsg, setToastMsg] = useState('')

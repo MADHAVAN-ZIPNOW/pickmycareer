@@ -759,3 +759,39 @@ header.top{overflow:visible}
  .pill .ni{width:18px;height:18px}
  .navr{min-width:0;flex:0 1 auto}
 }
+
+/* ===== sign-up / login modal v2 ===== */
+.ov{background:rgba(15,23,60,.55);backdrop-filter:blur(5px)}
+.modal.auth{max-width:560px;padding:0;border-radius:28px;overflow:hidden;max-height:94vh;overflow-y:auto;background:#fff;box-shadow:0 30px 80px rgba(15,23,60,.5)}
+.auth-head{display:flex;align-items:center;gap:14px;padding:22px 64px 18px 22px;background:linear-gradient(120deg,#FFF3C4 0%,#FFE29A 55%,#FFD36E 100%);border-bottom:1px solid rgba(180,100,0,.18)}
+.auth-head img{height:64px;width:auto;flex:0 0 auto;filter:drop-shadow(0 4px 8px rgba(0,0,0,.25))}
+.auth-head h2{font-size:clamp(20px,3.2vw,26px)!important;line-height:1.25;color:#0B1B5A;padding:0;margin:0;font-weight:800}
+.auth-head p{margin:3px 0 0;color:#7C2D12;font-weight:600;font-size:15px}
+.modal.auth .x{top:14px;right:14px;background:rgba(255,255,255,.85);color:#0B1B5A;width:44px;height:44px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.modal.auth .tabs{margin:18px 22px 6px;background:#EEF2FF;border-radius:16px;padding:5px}
+.modal.auth .tabs button{min-height:50px;font-size:17px;font-weight:800;color:#475569;border-radius:12px}
+.modal.auth .tabs button.on{background:linear-gradient(135deg,#312E81,#4F46E5);color:#fff;box-shadow:0 6px 14px rgba(79,70,229,.4)}
+.modal.auth .form{padding:12px 22px 4px;gap:14px}
+.form.su{grid-template-columns:1fr 1fr}
+.form.su>label:last-of-type,.form>.err,.form>button,.form>a{grid-column:1/-1}
+.modal.auth .form label{font-size:15px;font-weight:700;color:#0F172A;gap:6px}
+.modal.auth .inp{min-height:54px;font-size:17px;border:2px solid #CBD5E1;border-radius:14px;background:#F8FAFC;color:#0F172A}
+.modal.auth .inp::placeholder{color:#94A3B8;font-weight:400}
+.modal.auth .inp:focus{border-color:#4F46E5;background:#fff;box-shadow:0 0 0 4px rgba(79,70,229,.18)}
+.modal.auth .err{font-size:15px;min-height:0}
+.modal.auth .form>button.btn{min-height:58px;font-size:19px;border-radius:16px}
+.modal.auth .or{margin:6px 22px;font-size:14px;color:#64748B}
+.modal.auth .gbtn{width:calc(100% - 44px);margin:0 22px;min-height:54px;font-size:16px;border-color:#CBD5E1}
+.modal.auth .priv{padding:14px 22px 22px;margin:0;font-size:13.5px;line-height:1.45;color:#475569}
+@media(max-width:560px){
+ .form.su{grid-template-columns:1fr}
+ .auth-head{padding:18px 58px 14px 16px;gap:10px}.auth-head img{height:52px}
+ .modal.auth .tabs{margin:14px 16px 4px}
+ .modal.auth .form{padding:10px 16px 2px}
+ .modal.auth .or,.modal.auth .priv{margin-left:16px;margin-right:16px;padding-left:0;padding-right:0}
+ .modal.auth .gbtn{width:calc(100% - 32px);margin:0 16px}
+ .ov{padding:8px}
+}
+.m-quiz{height:clamp(70px,14vh,116px)!important;opacity:.55!important;top:7%!important;right:5%!important}
+.m-quiz{opacity:.85!important;height:clamp(80px,16vh,130px)!important}
+.m-quiz svg{overflow:visible}

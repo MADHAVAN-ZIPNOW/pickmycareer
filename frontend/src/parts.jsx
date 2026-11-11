@@ -26,17 +26,23 @@ export function AuthModal({ onClose, onAuthed, toast }) {
   }
   return (
     <div className="ov show" onClick={(e) => e.target === e.currentTarget && onClose()} role="dialog" aria-modal="true" aria-labelledby="authT">
-      <div className="modal">
+      <div className="modal auth">
         <button className="x" onClick={onClose} aria-label="Close">✕</button>
-        <h2 id="authT">{t('உன் எதிர்காலத்திற்கு சேர்', 'Join Your Future')}</h2>
+        <div className="auth-head">
+          <img src="/logo.png" alt="" width="64" height="66" />
+          <div>
+            <h2 id="authT">{t('உன் எதிர்காலத்திற்கு சேர்', 'Join Your Future')}</h2>
+            <p>{tab === 's' ? t('இலவசக் கணக்கு — 1 நிமிடத்தில்', 'Free account — takes 1 minute') : t('மீண்டும் வரவேற்கிறோம்!', 'Welcome back!')}</p>
+          </div>
+        </div>
         <div className="tabs"><button className={tab === 's' ? 'on' : ''} onClick={() => { setTab('s'); setErr('') }}>{t('பதிவு', 'Sign Up')}</button><button className={tab === 'l' ? 'on' : ''} onClick={() => { setTab('l'); setErr('') }}>{t('உள்நுழை', 'Login')}</button></div>
-        <form className="form" onSubmit={submit} noValidate key={tab}>
+        <form className={'form ' + (tab === 's' ? 'su' : 'lg')} onSubmit={submit} noValidate key={tab}>
           {tab === 's' ? (<>
-            <label>{t('பெயர்', 'Name')}<input className="inp" name="name" autoComplete="name" autoFocus /></label>
-            <label>{t('மொபைல் எண்', 'Mobile Number')}<input className="inp" name="mob" type="tel" inputMode="numeric" maxLength={10} autoComplete="tel" /></label>
-            <label>{t('ஊர், மாவட்டம்', 'Village, District')}<input className="inp" name="vil" /></label>
+            <label>{t('பெயர்', 'Name')}<input className="inp" name="name" autoComplete="name" placeholder={t("உன் பெயர்", "Your name")} autoFocus /></label>
+            <label>{t('மொபைல் எண்', 'Mobile Number')}<input className="inp" name="mob" type="tel" placeholder="98765 43210" inputMode="numeric" maxLength={10} autoComplete="tel" /></label>
+            <label>{t('ஊர், மாவட்டம்', 'Village, District')}<input className="inp" name="vil" placeholder={t("எ.கா. சிவராமபுரம், சேலம்", "e.g. Sivaramapuram, Salem")} /></label>
             <label>{t('வகுப்பு / கல்வித் தகுதி', 'Class or Qualification')}<select className="inp" name="cls"><option value="">{t('தேர்ந்தெடு…', 'Select…')}</option><option value="10th">{t('10-ஆம் வகுப்பு', '10th')}</option><option value="12th">{t('12-ஆம் வகுப்பு', '12th')}</option><option value="Diploma">{t('டிப்ளமா', 'Diploma')}</option><option value="Degree">{t('பட்டப்படிப்பு', 'Degree')}</option><option value="Other">{t('மற்றவை', 'Other')}</option></select></label>
-            <label>{t('கடவுச்சொல்', 'Password')}<input className="inp" name="pw" type="password" autoComplete="new-password" /></label>
+            <label>{t('கடவுச்சொல்', 'Password')}<input className="inp" name="pw" type="password" autoComplete="new-password" placeholder={t("குறைந்தது 6 எழுத்துகள்", "At least 6 characters")} /></label>
           </>) : (<>
             <label>{t('மொபைல் அல்லது மின்னஞ்சல்', 'Mobile or Email')}<input className="inp" name="id" autoComplete="username" autoFocus /></label>
             <label>{t('கடவுச்சொல்', 'Password')}<input className="inp" name="pw" type="password" autoComplete="current-password" /></label>

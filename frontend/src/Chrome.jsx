@@ -98,8 +98,37 @@ const Tower = () => (
   </svg>
 )
 
+// Paddy (rice) plant: arching panicle heavy with grains + leaf blades
+const ARC = (t) => {
+  // quadratic curve from the stalk top to the drooping tip
+  const p0 = [54, 62], p1 = [96, 8], p2 = [128, 78]
+  const x = (1 - t) * (1 - t) * p0[0] + 2 * (1 - t) * t * p1[0] + t * t * p2[0]
+  const y = (1 - t) * (1 - t) * p0[1] + 2 * (1 - t) * t * p1[1] + t * t * p2[1]
+  const dx = 2 * (1 - t) * (p1[0] - p0[0]) + 2 * t * (p2[0] - p1[0])
+  const dy = 2 * (1 - t) * (p1[1] - p0[1]) + 2 * t * (p2[1] - p1[1])
+  return { x, y, ang: (Math.atan2(dy, dx) * 180) / Math.PI }
+}
+const GRAINS = Array.from({ length: 11 }, (_, i) => {
+  const t = 0.08 + i * 0.085
+  const { x, y, ang } = ARC(t)
+  const size = 1 - i * 0.025
+  return [
+    { x: x + Math.cos(((ang + 90) * Math.PI) / 180) * 5, y: y + Math.sin(((ang + 90) * Math.PI) / 180) * 5, a: ang + 35, s: size },
+    { x: x - Math.cos(((ang + 90) * Math.PI) / 180) * 5, y: y - Math.sin(((ang + 90) * Math.PI) / 180) * 5, a: ang - 35, s: size },
+    { x, y, a: ang + 90, s: size },
+  ]
+}).flat()
+
 const Leaves = () => (
-  <svg viewBox="0 0 160 170"><g fill="#fff"><path d="M80 168C78 120 60 80 20 60c6 44 26 80 60 108z" /><path d="M82 168C86 110 110 70 150 48c-4 50-30 90-68 120z" /><path d="M80 120c-4-30-20-52-46-64 2 28 18 52 46 64z" opacity=".7" /><path d="M84 96c8-26 26-44 52-52-2 26-20 46-52 52z" opacity=".7" /></g></svg>
+  <svg viewBox="0 0 150 170">
+    <g fill="#fff">
+      <path d="M52 170C50 130 38 96 14 66c14 4 30 22 38 50z" opacity=".75" />
+      <path d="M58 170c2-40 14-74 36-94-6 36-12 64-30 94z" opacity=".75" />
+      <path d="M50 170c-1-50 2-92 6-112l4 1c-2 40-2 76 0 111z" />
+      {GRAINS.map((g, i) => <ellipse key={i} cx={g.x} cy={g.y} rx={6.5 * g.s} ry={2.9 * g.s} transform={'rotate(' + g.a + ' ' + g.x + ' ' + g.y + ')'} />)}
+      <path d="M56 62C86 6 120 12 130 80" stroke="#fff" strokeWidth="2.4" fill="none" strokeLinecap="round" />
+    </g>
+  </svg>
 )
 
 const Mark = ({ t }) => {
