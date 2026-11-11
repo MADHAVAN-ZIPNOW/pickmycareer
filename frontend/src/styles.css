@@ -795,3 +795,9 @@ header.top{overflow:visible}
 .m-quiz{height:clamp(70px,14vh,116px)!important;opacity:.55!important;top:7%!important;right:5%!important}
 .m-quiz{opacity:.85!important;height:clamp(80px,16vh,130px)!important}
 .m-quiz svg{overflow:visible}
+
+/* ===== first card: real paddy photo ===== */
+.k1{background:linear-gradient(160deg,rgba(22,163,74,.62) 0%,rgba(5,120,60,.80) 55%,rgba(4,80,45,.92) 100%),url(/paddy.jpg) 70% 30%/cover no-repeat!important}
+.m-quiz{display:none!important}
+.k1{background:linear-gradient(180deg,rgba(22,163,74,.05) 0%,rgba(5,100,50,.30) 52%,rgba(4,70,40,.82) 100%),url(/paddy.jpg) 55% 25%/cover no-repeat!important}
+.k1 .i img{filter:drop-shadow(0 6px 10px rgba(0,0,0,.45))}
